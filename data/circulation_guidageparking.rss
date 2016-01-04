@@ -1,0 +1,2178 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<rss version="2.0"
+	xmlns:vdlxml="http://service.vdl.lu/xml#"
+	xmlns:cc="http://web.resource.org/cc/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<channel>
+		<title>Ville de Luxembourg - Guidage Parking</title>
+		<link>http://www.vdl.lu/</link>
+		<description>Transmission en temps r&#233;el des informations du syst&#232;me de guidage parking de la Ville de Luxembourg</description>
+		<managingEditor>nospam@nospam.com (Coordination e-City, Ville de Luxembourg)</managingEditor>
+		<copyright>Ville de Luxembourg</copyright>
+		<cc:license rdf:about="http://creativecommons.org/licenses/by/3.0/lu/">
+			<cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+			<cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+			<cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+			<cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+			<cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+		</cc:license>
+		<lastBuildDate>Sat, 02 Jan 2016 01:39:00 +0100</lastBuildDate>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=29</guid>
+			<id>29</id>
+			<title>Brasserie</title>
+			<vdlxml:quartier lang="fr">Centre</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Zentrum</vdlxml:quartier>
+			<vdlxml:total>270</vdlxml:total>
+			<vdlxml:actuel>219</vdlxml:actuel>
+			<vdlxml:tendance>0</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>2 rue Emile Mousel</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>2 rue Emile Mousel</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61190</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.14140</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>360</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>360</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>4</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>4</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Tarif de jour (7h00 à 17h00) : 
+1 heure : 1,50 euro, 
+2 heures : 3,00 euro, 
+3 heures : 4,50 euro, 
+4 heures : 6,90 euro, 
+5 heures : 9,30 euro, 
+6 heures : 11,70 euro, 
+7 heures : 13,70 euro, 
+8 heures : 15,70 euro, 
+9 heures : 17,70 euro, 
+10 heures : 19,70 euro.
+Tarif de nuit (17h00 à 7h00) : 
+1,00 euro par heure.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Tagestarif (7:00 bis 17:00 Uhr): 
+1 Stunde: 1,50 Euro, 
+2 Stunden: 3,00 Euro, 
+3 Stunden: 4,50 Euro, 
+4 Stunden: 6,90 Euro, 
+5 Stunden: 9,30 Euro, 
+6 Stunden: 11,70 Euro, 
+7 Stunden: 13,70 Euro, 
+8 Stunden: 15,70 Euro, 
+9 Stunden: 17,70 Euro, 
+10 Stunden: 19,70 Euro.
+Nachttarif (17:00 bis 7:00 Uhr): 
+1,00 Euro pro Stunde.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>1</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>1</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>1</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>26 47 82 90</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Clausener Bréck : Lignes 9, 13, CN1.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Clausener Bréck: Linien 9, 13, CN1.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_28.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=1</guid>
+			<id>1</id>
+			<title>Theatre</title>
+			<vdlxml:quartier lang="fr">Centre</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Zentrum</vdlxml:quartier>
+			<vdlxml:total>335</vdlxml:total>
+			<vdlxml:actuel>294</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>1 rue Beaumont, L-1219 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>CÃ´te d'Eich, L-1450 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61308</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.13016</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>450</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>450</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>3</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,50 euro, 
+0h30 : 1.00 euro, 
+0h45 : 1,50 euro, 
+1h00 : 2,00 euro, 
+1h15 : 2.50 euro, 
+1h30 : 3,00 euro, 
+1h45 : 3,50 euro, 
+2h00 : 4,00 euro, 
+2h15 : 4,50 euro, 
+2h30 : 5,00 euro, 
+2h45 : 5,50 euro, 
+3h00 : 6,00 euro, 
+3h15 : 6,60 euro, 
+3h30 : 7,20 euro, 
+3h45 : 7,80 euro, 
+4h00 : 8,40 euro, 
+4h15 : 9,00 euro, 
+4h30 : 9,60 euro, 
+4h45 : 10,20 euro, 
+5h00 : 10,80 euro, 
+6h00 : 14,00 euro, 
+7h00 : 17,20 euro, 
+8h00 : 20,40 euro, 
+9h00 : 23,60 euro, 
+10h00 : 26,80 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.
+</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,50 euro, 
+0St30 : 1.00 euro, 
+0St45 : 1,50 euro, 
+1St00 : 2,00 euro, 
+1St15 : 2.50 euro, 
+1St30 : 3,00 euro, 
+1St45 : 3,50 euro, 
+2St00 : 4,00 euro, 
+2St15 : 4,50 euro, 
+2St30 : 5,00 euro, 
+St45 : 5,50 euro, 
+3St00 : 6,00 euro, 
+3St15 : 6,60 euro, 
+3St30 : 7,20 euro, 
+3St45 : 7,80 euro, 
+4St00 : 8,40 euro, 
+4St15 : 9,00 euro, 
+4St30 : 9,60 euro, 
+4St45 : 10,20 euro, 
+5St00 : 10,80 euro, 
+6St00 : 14,00 euro, 
+7St00 : 17,20 euro, 
+8St00 : 20,40 euro, 
+9St00 : 23,60 euro, 
+10St00 : 26,80 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>1</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>1</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>22 01 05</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Kasinosgaass : Lignes 19, 20.
+Arrêt Badanstalt : Lignes 5, 9, 10, 11, 14, 19, 20.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Kasinosgaass: Linien 19, 20.
+Haltestelle Badanstalt: Linien 5, 9, 10, 11, 14, 19, 20.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_1.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=3</guid>
+			<id>3</id>
+			<title>Saint-Esprit</title>
+			<vdlxml:quartier lang="fr">Centre</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Zentrum</vdlxml:quartier>
+			<vdlxml:total>122</vdlxml:total>
+			<vdlxml:actuel>121</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>8 Boulevard Franklin Delano Roosevelt, L-2450 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Boulevard Franklin Delano Roosevelt, L-2450 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.60850</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.13225</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>438</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>438</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>4</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,50 euro, 
+0h30 : 1.00 euro, 
+0h45 : 1,50 euro, 
+1h00 : 2,00 euro, 
+1h15 : 2.50 euro, 
+1h30 : 3,00 euro, 
+1h45 : 3,50 euro, 
+2h00 : 4,00 euro, 
+2h15 : 4,50 euro, 
+2h30 : 5,00 euro, 
+2h45 : 5,50 euro, 
+3h00 : 6,00 euro, 
+3h15 : 6,60 euro, 
+3h30 : 7,20 euro, 
+3h45 : 7,80 euro, 
+4h00 : 8,40 euro, 
+4h15 : 9,00 euro, 
+4h30 : 9,60 euro, 
+4h45 : 10,20 euro, 
+5h00 : 10,80 euro, 
+6h00 : 14,00 euro, 
+7h00 : 17,20 euro, 
+8h00 : 20,40 euro, 
+9h00 : 23,60 euro, 
+10h00 : 26,80 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,50 euro, 
+0St30 : 1.00 euro, 
+0St45 : 1,50 euro, 
+1St00 : 2,00 euro, 
+1St15 : 2.50 euro, 
+1St30 : 3,00 euro, 
+1St45 : 3,50 euro, 
+2St00 : 4,00 euro, 
+2St15 : 4,50 euro, 
+2St30 : 5,00 euro, 
+St45 : 5,50 euro, 
+3St00 : 6,00 euro, 
+3St15 : 6,60 euro, 
+3St30 : 7,20 euro, 
+3St45 : 7,80 euro, 
+4St00 : 8,40 euro, 
+4St15 : 9,00 euro, 
+4St30 : 9,60 euro, 
+4St45 : 10,20 euro, 
+5St00 : 10,80 euro, 
+6St00 : 14,00 euro, 
+7St00 : 17,20 euro, 
+8St00 : 20,40 euro, 
+9St00 : 23,60 euro, 
+10St00 : 26,80 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>48 13 36 329</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt F.D. Roosevelt : Ligne 20.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle F.D. Roosevelt : Linie 20.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_2.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=4</guid>
+			<id>4</id>
+			<title>Knuedler</title>
+			<vdlxml:quartier lang="fr">Centre</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Zentrum</vdlxml:quartier>
+			<vdlxml:total>350</vdlxml:total>
+			<vdlxml:actuel>289</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>15 rue Notre-Dame, L-2240 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>15 rue Notre-Dame, L-2240 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61014</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.12970</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>500</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>500</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>4</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>11</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,50 euro, 
+0h30 : 1.00 euro, 
+0h45 : 1,50 euro, 
+1h00 : 2,00 euro, 
+1h15 : 2.50 euro, 
+1h30 : 3,00 euro, 
+1h45 : 3,50 euro, 
+2h00 : 4,00 euro, 
+2h15 : 4,50 euro, 
+2h30 : 5,00 euro, 
+2h45 : 5,50 euro, 
+3h00 : 6,00 euro, 
+3h15 : 6,60 euro, 
+3h30 : 7,20 euro, 
+3h45 : 7,80 euro, 
+4h00 : 8,40 euro, 
+4h15 : 9,00 euro, 
+4h30 : 9,60 euro, 
+4h45 : 10,20 euro, 
+5h00 : 10,80 euro, 
+6h00 : 14,00 euro, 
+7h00 : 17,20 euro, 
+8h00 : 20,40 euro, 
+9h00 : 23,60 euro, 
+10h00 : 26,80 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,50 euro, 
+0St30 : 1.00 euro, 
+0St45 : 1,50 euro, 
+1St00 : 2,00 euro, 
+1St15 : 2.50 euro, 
+1St30 : 3,00 euro, 
+1St45 : 3,50 euro, 
+2St00 : 4,00 euro, 
+2St15 : 4,50 euro, 
+2St30 : 5,00 euro, 
+St45 : 5,50 euro, 
+3St00 : 6,00 euro, 
+3St15 : 6,60 euro, 
+3St30 : 7,20 euro, 
+3St45 : 7,80 euro, 
+4St00 : 8,40 euro, 
+4St15 : 9,00 euro, 
+4St30 : 9,60 euro, 
+4St45 : 10,20 euro, 
+5St00 : 10,80 euro, 
+6St00 : 14,00 euro, 
+7St00 : 17,20 euro, 
+8St00 : 20,40 euro, 
+9St00 : 23,60 euro, 
+10St00 : 26,80 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>1</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>1</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>26 00 12</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr"></vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de"></vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_3.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=6</guid>
+			<id>6</id>
+			<title>Monterey</title>
+			<vdlxml:quartier lang="fr">Centre</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Zentrum</vdlxml:quartier>
+			<vdlxml:total>340</vdlxml:total>
+			<vdlxml:actuel>329</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>28 Avenue Monterey, L-2163 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Boulevard du Prince Henri, L-1724 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61009</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.12284</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>450</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>450</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>3</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>7</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,50 euro, 
+0h30 : 1.00 euro, 
+0h45 : 1,50 euro, 
+1h00 : 2,00 euro, 
+1h15 : 2.50 euro, 
+1h30 : 3,00 euro, 
+1h45 : 3,50 euro, 
+2h00 : 4,00 euro, 
+2h15 : 4,50 euro, 
+2h30 : 5,00 euro, 
+2h45 : 5,50 euro, 
+3h00 : 6,00 euro, 
+3h15 : 6,60 euro, 
+3h30 : 7,20 euro, 
+3h45 : 7,80 euro, 
+4h00 : 8,40 euro, 
+4h15 : 9,00 euro, 
+4h30 : 9,60 euro, 
+4h45 : 10,20 euro, 
+5h00 : 10,80 euro, 
+6h00 : 14,00 euro, 
+7h00 : 17,20 euro, 
+8h00 : 20,40 euro, 
+9h00 : 23,60 euro, 
+10h00 : 26,80 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,50 euro, 
+0St30 : 1.00 euro, 
+0St45 : 1,50 euro, 
+1St00 : 2,00 euro, 
+1St15 : 2.50 euro, 
+1St30 : 3,00 euro, 
+1St45 : 3,50 euro, 
+2St00 : 4,00 euro, 
+2St15 : 4,50 euro, 
+2St30 : 5,00 euro, 
+St45 : 5,50 euro, 
+3St00 : 6,00 euro, 
+3St15 : 6,60 euro, 
+3St30 : 7,20 euro, 
+3St45 : 7,80 euro, 
+4St00 : 8,40 euro, 
+4St15 : 9,00 euro, 
+4St30 : 9,60 euro, 
+4St45 : 10,20 euro, 
+5St00 : 10,80 euro, 
+6St00 : 14,00 euro, 
+7St00 : 17,20 euro, 
+8St00 : 20,40 euro, 
+9St00 : 23,60 euro, 
+10St00 : 26,80 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>1</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>1</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>26 27 42</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêts Hamilius, Royal, Monterey : Toutes lignes sauf 23, 24, 25.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestellen Hamilius, Royal, Monterey: Alle Linien ausser 23, 24, 25.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_5.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=8</guid>
+			<id>8</id>
+			<title>Martyrs</title>
+			<vdlxml:quartier lang="fr">Gare</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Bahnhof</vdlxml:quartier>
+			<vdlxml:total>250</vdlxml:total>
+			<vdlxml:actuel>250</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>6 Rue de la GrÃ¨ve, L-1643 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Rue de la GrÃ¨ve, L-1643 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.60467</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.12883</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>450</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>450</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>2</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,50 euro, 
+0h30 : 1.00 euro, 
+0h45 : 1,50 euro, 
+1h00 : 2,00 euro, 
+1h15 : 2.50 euro, 
+1h30 : 3,00 euro, 
+1h45 : 3,50 euro, 
+2h00 : 4,00 euro, 
+2h15 : 4,50 euro, 
+2h30 : 5,00 euro, 
+2h45 : 5,50 euro, 
+3h00 : 6,00 euro, 
+3h15 : 6,60 euro, 
+3h30 : 7,20 euro, 
+3h45 : 7,80 euro, 
+4h00 : 8,30 euro, 
+4h15 : 9,00 euro, 
+4h30 : 9,60 euro, 
+4h45 : 10,20 euro, 
+5h00 : 10,60 euro, 
+6h00 : 13,60 euro, 
+7h00 : 16,20 euro, 
+8h00 : 19,00 euro, 
+9h00 : 21,80 euro, 
+10h00 : 24,60 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,50 euro, 
+0St30 : 1.00 euro, 
+0St45 : 1,50 euro, 
+1St00 : 2,00 euro, 
+1St15 : 2.50 euro, 
+1St30 : 3,00 euro, 
+1St45 : 3,50 euro, 
+2St00 : 4,00 euro, 
+2St15 : 4,50 euro, 
+2St30 : 5,00 euro, 
+St45 : 5,50 euro, 
+3St00 : 6,00 euro, 
+3St15 : 6,60 euro, 
+3St30 : 7,20 euro, 
+3St45 : 7,80 euro, 
+4St00 : 8,30 euro, 
+4St15 : 9,00 euro, 
+4St30 : 9,60 euro, 
+4St45 : 10,20 euro, 
+5St00 : 10,60 euro, 
+6St00 : 13,40 euro, 
+7St00 : 16,20 euro, 
+8St00 : 19,00 euro, 
+9St00 : 21,80 euro, 
+10St00 : 24,60 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>1</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>1</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>40 00 551</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Gare centrale : Toutes lignes sauf 7, 12, 17, 19, 24, 25.
+</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Gare centrale: Alle Linien ausser 7, 12, 17, 19, 24, 25.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_6.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=9</guid>
+			<id>9</id>
+			<title>Rocade</title>
+			<vdlxml:quartier lang="fr">Gare</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Bahnhof</vdlxml:quartier>
+			<vdlxml:total>250</vdlxml:total>
+			<vdlxml:actuel>169</vdlxml:actuel>
+			<vdlxml:tendance>0</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>42 Rue du Laboratoire, L-1911 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Rue du Laboratoire, L-1911 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.60317</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.13650</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>555</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>555</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>4</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>6</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,50 euro, 
+0h30 : 1.00 euro, 
+0h45 : 1,50 euro, 
+1h00 : 2,00 euro, 
+1h15 : 2.50 euro, 
+1h30 : 3,00 euro, 
+1h45 : 3,50 euro, 
+2h00 : 4,00 euro, 
+2h15 : 4,50 euro, 
+2h30 : 5,00 euro, 
+2h45 : 5,50 euro, 
+3h00 : 6,00 euro, 
+3h15 : 6,60 euro, 
+3h30 : 7,20 euro, 
+3h45 : 7,80 euro, 
+4h00 : 8,30 euro, 
+4h15 : 9,00 euro, 
+4h30 : 9,60 euro, 
+4h45 : 10,20 euro, 
+5h00 : 10,60 euro, 
+6h00 : 13,60 euro, 
+7h00 : 16,20 euro, 
+8h00 : 19,00 euro, 
+9h00 : 21,80 euro, 
+10h00 : 24,60 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,50 euro, 
+0St30 : 1.00 euro, 
+0St45 : 1,50 euro, 
+1St00 : 2,00 euro, 
+1St15 : 2.50 euro, 
+1St30 : 3,00 euro, 
+1St45 : 3,50 euro, 
+2St00 : 4,00 euro, 
+2St15 : 4,50 euro, 
+2St30 : 5,00 euro, 
+St45 : 5,50 euro, 
+3St00 : 6,00 euro, 
+3St15 : 6,60 euro, 
+3St30 : 7,20 euro, 
+3St45 : 7,80 euro, 
+4St00 : 8,30 euro, 
+4St15 : 9,00 euro, 
+4St30 : 9,60 euro, 
+4St45 : 10,20 euro, 
+5St00 : 10,60 euro, 
+6St00 : 13,40 euro, 
+7St00 : 16,20 euro, 
+8St00 : 19,00 euro, 
+9St00 : 21,80 euro, 
+10St00 : 24,60 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,10 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>48 13 36 324</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Wallis : Lignes 3, 13.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Wallis: Linien 3, 13.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_7.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=10</guid>
+			<id>10</id>
+			<title>Fort Wedell</title>
+			<vdlxml:quartier lang="fr">Gare</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Bahnhof</vdlxml:quartier>
+			<vdlxml:total>310</vdlxml:total>
+			<vdlxml:actuel>258</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>1 Rue du Commerce, L-1351 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Rue du Commerce, L-1351 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.59950</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.12933</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>420</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>420</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>12</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,50 euro, 
+0h30 : 1.00 euro, 
+0h45 : 1,50 euro, 
+1h00 : 2,00 euro, 
+1h15 : 2.50 euro, 
+1h30 : 3,00 euro, 
+1h45 : 3,50 euro, 
+2h00 : 4,00 euro, 
+2h15 : 4,50 euro, 
+2h30 : 5,00 euro, 
+2h45 : 5,50 euro, 
+3h00 : 6,00 euro, 
+3h15 : 6,60 euro, 
+3h30 : 7,20 euro, 
+3h45 : 7,80 euro, 
+4h00 : 8,30 euro, 
+4h15 : 9,00 euro, 
+4h30 : 9,60 euro, 
+4h45 : 10,20 euro, 
+5h00 : 10,60 euro, 
+6h00 : 13,60 euro, 
+7h00 : 16,20 euro, 
+8h00 : 19,00 euro, 
+9h00 : 21,80 euro, 
+10h00 : 24,60 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,50 euro, 
+0St30 : 1.00 euro, 
+0St45 : 1,50 euro, 
+1St00 : 2,00 euro, 
+1St15 : 2.50 euro, 
+1St30 : 3,00 euro, 
+1St45 : 3,50 euro, 
+2St00 : 4,00 euro, 
+2St15 : 4,50 euro, 
+2St30 : 5,00 euro, 
+St45 : 5,50 euro, 
+3St00 : 6,00 euro, 
+3St15 : 6,60 euro, 
+3St30 : 7,20 euro, 
+3St45 : 7,80 euro, 
+4St00 : 8,30 euro, 
+4St15 : 9,00 euro, 
+4St30 : 9,60 euro, 
+4St45 : 10,20 euro, 
+5St00 : 10,60 euro, 
+6St00 : 13,40 euro, 
+7St00 : 16,20 euro, 
+8St00 : 19,00 euro, 
+9St00 : 21,80 euro, 
+10St00 : 24,60 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>40 55 02</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Commerce : Ligne 20.
+</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Commerce: Linie 20.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_8.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=11</guid>
+			<id>11</id>
+			<title>Fort Neipperg</title>
+			<vdlxml:quartier lang="fr">Gare</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Bahnhof</vdlxml:quartier>
+			<vdlxml:total>510</vdlxml:total>
+			<vdlxml:actuel>419</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>43 rue du Fort Neipperg, L-2230 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Rue du Chemin de Fer, L-1516 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.60200</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.13483</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>810</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>810</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>4</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>7</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,50 euro, 
+0h30 : 1.00 euro, 
+0h45 : 1,50 euro, 
+1h00 : 2,00 euro, 
+1h15 : 2.50 euro, 
+1h30 : 3,00 euro, 
+1h45 : 3,50 euro, 
+2h00 : 4,00 euro, 
+2h15 : 4,50 euro, 
+2h30 : 5,00 euro, 
+2h45 : 5,50 euro, 
+3h00 : 6,00 euro, 
+3h15 : 6,60 euro, 
+3h30 : 7,20 euro, 
+3h45 : 7,80 euro, 
+4h00 : 8,30 euro, 
+4h15 : 9,00 euro, 
+4h30 : 9,60 euro, 
+4h45 : 10,20 euro, 
+5h00 : 10,60 euro, 
+6h00 : 13,60 euro, 
+7h00 : 16,20 euro, 
+8h00 : 19,00 euro, 
+9h00 : 21,80 euro, 
+10h00 : 24,60 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,50 euro, 
+0St30 : 1.00 euro, 
+0St45 : 1,50 euro, 
+1St00 : 2,00 euro, 
+1St15 : 2.50 euro, 
+1St30 : 3,00 euro, 
+1St45 : 3,50 euro, 
+2St00 : 4,00 euro, 
+2St15 : 4,50 euro, 
+2St30 : 5,00 euro, 
+St45 : 5,50 euro, 
+3St00 : 6,00 euro, 
+3St15 : 6,60 euro, 
+3St30 : 7,20 euro, 
+3St45 : 7,80 euro, 
+4St00 : 8,30 euro, 
+4St15 : 9,00 euro, 
+4St30 : 9,60 euro, 
+4St45 : 10,20 euro, 
+5St00 : 10,60 euro, 
+6St00 : 13,40 euro, 
+7St00 : 16,20 euro, 
+8St00 : 19,00 euro, 
+9St00 : 21,80 euro, 
+10St00 : 24,60 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>48 13 36 325</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Wallis : Lignes 3, 13.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Wallis: Linien 3, 13.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_9.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=30</guid>
+			<id>30</id>
+			<title>Nobilis</title>
+			<vdlxml:quartier lang="fr">Gare</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Bahnhof</vdlxml:quartier>
+			<vdlxml:total></vdlxml:total>
+			<vdlxml:actuel></vdlxml:actuel>
+			<vdlxml:tendance></vdlxml:tendance>
+			<vdlxml:ouvert>0</vdlxml:ouvert>
+			<vdlxml:complet></vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>32 rue du Fort Neipperg, L-2230 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>32 rue du Fort Neipperg, L-2230 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.602454</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.134845</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>139</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>139</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>3</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">30 minutes : 0,80 €
+1 heure : 1,50 €
+1 heure 30 minutes : 2,30 €
+2 heures : 3,00 €
+2 heures 30 minutes : 3,80 €
+3 heures : 4,50 €
+3 heures 30 minutes : 5,50 €
+4 heures : 6,50 €
+4 heures 30 minutes : 7,50 €
+5 heures : 8,50 €
+6 heures : 10,50 €
+7 heures : 12,50 €
+8 heures : 14,50 €
+9 heures : 16,50 €
+10 heures : 18,50 €</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">30 Minuten: 0,80 €
+1 Stunde: 1,50 €
+1 Stunde 30 Minuten: 2,30 €
+2 Stunden: 3,00 €
+2 Stunden 30 Minuten: 3,80 €
+3 Stunden: 4,50 €
+3 Stunden 30 Minuten: 5,50 €
+4 Stunden: 6,50 €
+4 Stunden 30 Minuten: 7,50 €
+5 Stunden: 8,50 €
+6 Stunden: 10,50 €
+7 Stunden: 12,50 €
+8 Stunden: 14,50 €
+9 Stunden: 16,50 €
+10 Stunden: 18,50 €</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>0</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>1,80 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>262016251</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr"></vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de"></vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_30.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=14</guid>
+			<id>14</id>
+			<title>Auchan</title>
+			<vdlxml:quartier lang="fr">Kirchberg</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Kirchberg</vdlxml:quartier>
+			<vdlxml:total>2076</vdlxml:total>
+			<vdlxml:actuel></vdlxml:actuel>
+			<vdlxml:tendance></vdlxml:tendance>
+			<vdlxml:ouvert>-1</vdlxml:ouvert>
+			<vdlxml:complet></vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>41 Avenue J.F. Kennedy, L-1855 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Avenue John Fitzgerald Kennedy, L-1855 Luxembourg
+Circuit de la Foire, L-1347 Luxembourg
+Rue Alphonse Weicker, L-2721 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.63233</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.17133</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>2766</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>2766</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>70</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Pendant les horaires d'ouverture du centre commercial (lundi à jeudi de 7h00 à 21h00, vendredi de 7h00 à 22h00, samedi de 6h00 à 19h00) :
+3 heures de stationnement gratuit, 
+1,00 euro pour la 4ème heure, 
+3,00 euro à partir de la 5ème heure.
+En dehors des horaires d'ouverture du centre commercial (lundi à jeudi de 21h00 à 7h00, vendredi de 22h00 à samedi 6h00, samedi de 19h00 à lundi 7h00) :
+1/2 heure : 0,50 euro, 
+1 heure : 1,00 euro, 
+1 1/2 heures : 1,50 euro, 
+2 heures : 2,00 euro, 
+2 1/2 heures : 2,50 euro, 
+3 heures et plus : 3,00 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Während der Öffnungszeit des Einkaufszentrums (Montag bis Donnerstag von 7:00 bis 21:00 Uhr, Freitag von 7:00 bis 22:00 Uhr, Samstag von 6:00 bis 19:00 Uhr):
+3 Stunden kostenlos, 
+1,00 Euro für die 4. Stunde, 
+3,00 Euro ab der 5. Stunde.
+Außerhalb der Öffnungszeiten des Einkaufszentrums (Montag bis Donnerstag von 21:00 bis 7:00 Uhr, Freitag von 22:00 bis Samstag 6:00 Uhr, Samstag von 19:00 bis Montag 7:00 Uhr:
+1/2 Stunde: 0,50 Euro, 
+1 Stunde: 1,00 Euro, 
+1 1/2 Stunden: 1,50 Euro, 
+2 Stunden: 2,00 Euro, 
+2 1/2 Stunden: 2,50 Euro, 
+3 Stunden oder mehr: 3,00 Euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>1</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>1</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>1</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>43 77 431</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt John F. Kennedy : Lignes 1, 16, 18.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle John F. Kennedy: Linien 1, 16, 18.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_12.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=7</guid>
+			<id>7</id>
+			<title>Rond Point Schuman</title>
+			<vdlxml:quartier lang="fr">Centre</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Zentrum</vdlxml:quartier>
+			<vdlxml:total></vdlxml:total>
+			<vdlxml:actuel></vdlxml:actuel>
+			<vdlxml:tendance></vdlxml:tendance>
+			<vdlxml:ouvert>0</vdlxml:ouvert>
+			<vdlxml:complet></vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>49 AllÃ©e Scheffer, L-2520 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Avenue Victor Hugo, L-1750 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61800</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.12517</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>443</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>443</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>12</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>8</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 7h00 à 17h00 :
+0h15 : 0,40 euro, 
+0h30 : 0,80 euro, 
+0h45 : 1,20 euro, 
+1h00 : 1,50 euro, 
+1h15 : 1,90 euro, 
+1h30 : 2,30 euro, 
+1h45 : 2,70 euro, 
+2h00 : 3,00 euro, 
+2h15 : 3,40 euro, 
+2h30 : 3,80 euro, 
+2h45 : 4,20 euro, 
+3h00 : 4,50 euro, 
+3h15 : 4,70 euro, 
+3h30 : 4,90 euro, 
+3h45 : 5,10 euro, 
+4h00 : 5,30 euro, 
+4h15 : 5,50 euro, 
+4h30 : 5,70 euro, 
+4h45 : 5,90 euro, 
+5h00 : 6,10 euro, 
+6h00 : 6,90 euro, 
+7h00 : 7,70 euro, 
+8h00 : 8,50 euro, 
+9h00 : 9,30 euro, 
+10h00 : 10,10 euro, 
+De 17h00 à 7h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 7:00 bis 17:00 Uhr:
+0St15 : 0,40 euro, 
+0St30 : 0,80 euro, 
+0St45 : 1,20 euro, 
+1St00 : 1,50 euro, 
+1St15 : 1,90 euro, 
+1St30 : 2,30 euro, 
+1St45 : 2,70 euro, 
+2St00 : 3,00 euro, 
+2St15 : 3,40 euro, 
+2St30 : 3,80 euro, 
+2St45 : 4,20 euro, 
+3St00 : 4,50 euro, 
+3St15 : 4,70 euro, 
+3St30 : 4,90 euro, 
+3St45 : 5,10 euro, 
+4St00 : 5,30 euro, 
+4St15 : 5,50 euro, 
+4St30 : 5,70 euro, 
+4St45 : 5,90 euro, 
+5St00 : 6,10 euro, 
+6St00 : 6,90 euro, 
+7St00 : 7,70 euro, 
+8St00 : 8,50 euro, 
+9St00 : 9,30 euro, 
+10St00 : 10,10 euro, 
+Von 17h00 bis 7h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>48 13 36 331</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Lycée Robert Schuman : Lignes 2, 4.
+</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Lycée Robert Schuman: Linien 2, 4.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_13.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=15</guid>
+			<id>15</id>
+			<title>Place de l'Europe</title>
+			<vdlxml:quartier lang="fr">Kirchberg</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Kirchberg</vdlxml:quartier>
+			<vdlxml:total></vdlxml:total>
+			<vdlxml:actuel></vdlxml:actuel>
+			<vdlxml:tendance></vdlxml:tendance>
+			<vdlxml:ouvert>0</vdlxml:ouvert>
+			<vdlxml:complet></vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>Place Europe, L-1499 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Place Europe, L-1499 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61983</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.14400</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>1324</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>1324</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>10</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>12</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Tarif de jour (7h00 à 19h00) : 
+1 heure : 1,20 euro, 
+2 heures : 2,40 euro, 
+3 heures : 3,60 euro, 
+4 heures : 4,80 euro, 
+5 heures : 6,00 euro, 
+6 heures : 7,30 euro, 
+7 heures : 8,60 euro, 
+8 heures : 10,00 euro, 
+9 heures : 11,40 euro, 
+10 heures : 12,80 euro, 
+11 heures : 14,20 euro, 
+12 heures : 15,60 euro.
+Tarif de nuit (19h00 à 7h00) : 
+0,50 euro par heure.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Tagestarif (7:00 bis 19:00 Uhr): 
+1 Stunde: 1,20 Euro, 
+2 Stunden: 2,40 Euro, 
+3 Stunden: 3,60 Euro, 
+4 Stunden: 4,80 Euro, 
+5 Stunden: 6,00 Euro, 
+6 Stunden: 7,30 Euro, 
+7 Stunden: 8,60 Euro, 
+8 Stunden: 10,00 Euro, 
+9 Stunden: 11,40 Euro, 
+10 Stunden: 12,80 Euro, 
+11 Stunden: 14,20 Euro, 
+12 Stunden: 15,60 Euro.
+Nachttarif (19:00 bis 7:00 Uhr): 
+0,50 Euro pro Stunde.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>26 00 81 15</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Philharmonie Mudam : Lignes 1, 13, 18.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Philharmonie Mudam: Linien 1, 13, 18.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_14.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=16</guid>
+			<id>16</id>
+			<title>Trois Glands</title>
+			<vdlxml:quartier lang="fr">Kirchberg</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Kirchberg</vdlxml:quartier>
+			<vdlxml:total>350</vdlxml:total>
+			<vdlxml:actuel>335</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>Park Drai Eechelen, L-1499 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Park Drai Eechelen, L-1499 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61717</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.14267</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>525</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>525</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>3</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>6</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>10</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>4</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Tarif de jour (7h00 à 19h00) : 
+1 heure : 1,20 euro, 
+2 heures : 2,40 euro, 
+3 heures : 3,60 euro, 
+4 heures : 4,80 euro, 
+5 heures : 6,00 euro, 
+6 heures : 7,30 euro, 
+7 heures : 8,60 euro, 
+8 heures : 10,00 euro, 
+9 heures : 11,40 euro, 
+10 heures : 12,80 euro, 
+11 heures : 14,20 euro, 
+12 heures : 15,60 euro, 
+Tarif de nuit (19h00 à 7h00) : 
+0,50 euro par heure.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Tagestarif (7:00 bis 19:00 Uhr): 
+1 Stunde: 1,20 Euro, 
+2 Stunden: 2,40 Euro, 
+3 Stunden: 3,60 Euro, 
+4 Stunden: 4,80 Euro, 
+5 Stunden: 6,00 Euro, 
+6 Stunden: 7,30 Euro, 
+7 Stunden: 8,60 Euro, 
+8 Stunden: 10,00 Euro, 
+9 Stunden: 11,40 Euro, 
+10 Stunden: 12,80 Euro, 
+11 Stunden: 14,20 Euro, 
+12 Stunden: 15,60 Euro, 
+Nachttarif (19:00 bis 7:00 Uhr): 
+0,50 Euro pro Stunde.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>26 00 81 15</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Philharmonie Mudam : Lignes 1, 13, 18.
+</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Philharmonie Mudam: Linien 1, 13, 18.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_15.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=17</guid>
+			<id>17</id>
+			<title>Coque 2</title>
+			<vdlxml:quartier lang="fr">Kirchberg</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Kirchberg</vdlxml:quartier>
+			<vdlxml:total>321</vdlxml:total>
+			<vdlxml:actuel>289</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>Rue Ã‰rasme, L-1468 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Rue Ã‰rasme, L-1468 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.62250</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.15100</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>395</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>395</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>8</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Tarif de jour (7h00 à 19h00) : 1,00  euro par heure pendant les 5 premières heures; à partir de la 6ième heure 0,60 euro par heure.
+Tarif de nuit (19h00 à 7h00) : 0,50 euro par heure.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">0,50 Euro pro Stunde.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>1</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>1</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>26 00 12</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Léon Hengen : Lignes 7, 12, 13.
+Arrêts Erasme, Coque : Lignes 1, 16.
+</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Léon Hengen : Linien 7, 12, 13.
+Haltestellen Erasme, Coque : Linien 1, 16.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_16.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=22</guid>
+			<id>22</id>
+			<title>Glacis</title>
+			<vdlxml:quartier lang="fr">Centre</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Zentrum</vdlxml:quartier>
+			<vdlxml:total>1243</vdlxml:total>
+			<vdlxml:actuel>1241</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>21 AllÃ©e Scheffer, L-2520 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Avenue de la FaÃ¯encerie, L-1510 Luxembourg.
+AllÃ©e Scheffer, L-2520 Luxembourg.</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61583</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.12217</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>1237</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>1237</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>0</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>6</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>10</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>11</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>50</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">0,80 euro par heure du lundi au vendredi de 8h00 à 18h00.
+A partir du 01.02.2013: 1,00 euro par heure</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">0,80 Euro pro Stunde von Montag bis Freitag von  8:00 bis 18:00 Uhr.
+Ab dem 1.02.2013: 1,00 Euro/Stunde</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>1</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur></vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone></vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Lycée Robert Schuman : Lignes 2, 4.
+Arrêt Glacis : Ligne 3.
+Arrêt Parking Glacis : Ligne City Shopping Bus.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Lycée Robert Schuman: Linien 2, 4.
+Haltestelle Glacis : Linie 3.
+Haltestelle Parking Glacis : Linie City Shopping Bus.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_17.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=19</guid>
+			<id>19</id>
+			<title>Gare</title>
+			<vdlxml:quartier lang="fr">Gare</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Bahnhof</vdlxml:quartier>
+			<vdlxml:total>625</vdlxml:total>
+			<vdlxml:actuel>535</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>38 Place de la Gare, L-1616 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Place de la Gare, L-1616 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.59833</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.13267</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>639</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>639</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>11</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>3</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">1,50 euro par heure.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">1,50 Euro pro Stunde.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,10 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>49 90 45 16</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Gare centrale : Toutes lignes sauf 3, 7, 12, 13, 17, 19, 24, 25.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Gare centrale: Alle Linien ausser 3, 7, 12, 13, 17, 19, 24, 25.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_18.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=23</guid>
+			<id>23</id>
+			<title>Luxexpo</title>
+			<vdlxml:quartier lang="fr">Kirchberg</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Kirchberg</vdlxml:quartier>
+			<vdlxml:total>200</vdlxml:total>
+			<vdlxml:actuel>0</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>20 rue Hugo Gernsback, L-1652 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>20 rue Hugo Gernsback, L-1652 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.63533</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.17467</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>900</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>900</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>0</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>5</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>6</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>6</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Lundi à vendredi, sauf pendant les foires :
+2 heures gratuites,
+2 à 3 heures : 1,00 euro,
+heure supplémentaire : 3,00 euro.
+Samedi, dimanche et jour férié, sauf pendant les foires : gratuit.
+Pendant les foires : 3,00 euro par jour.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Montag bis Freitag außer während Messen:
+2 Stunden kostenlos,
+2 bis 3 Stunden: 1,00 Euro,
+pro weitere Stunde: 3,00 Euro.
+Samstag, Sonntag und Feiertag, außer während Messen: kostenlos.
+Während Messen: 3,00 Euro pro Tag.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>0</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>0</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur></vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>43 99 1</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Parking Foire : Lignes 1, 18, 25.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Parking Foire: Linien 1, 18, 25.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_19.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=20</guid>
+			<id>20</id>
+			<title>Adenauer</title>
+			<vdlxml:quartier lang="fr">Kirchberg</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Kirchberg</vdlxml:quartier>
+			<vdlxml:total>414</vdlxml:total>
+			<vdlxml:actuel>410</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>Boulevard Konrad Adenauer, L-1115 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Boulevard Konrad Adenauer, L-1115 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.63000</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.15733</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>438</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>438</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>0</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>10</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Lundi à vendredi de 8h00 à 18h00 : 0,50 euro par heure.
+De 18h00 à 8h00 ainsi que les samedis et dimanches : gratuit.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Montag bis Freitag von 8:00 bis 18:00 Uhr: 0,50 Euro pro Stunde.
+Von 18:00 bis 8:00 Uhr, sowie Samstag und Sonntag: kostenlos.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>0</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur></vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone></vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Konrad Adenauer : Lignes 7, 18, 25.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Konrad Adenauer: Linien 7, 18, 25.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_20.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=18</guid>
+			<id>18</id>
+			<title>Coque 1</title>
+			<vdlxml:quartier lang="fr">Kirchberg</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Kirchberg</vdlxml:quartier>
+			<vdlxml:total>195</vdlxml:total>
+			<vdlxml:actuel>193</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>2 rue LÃ©on Hengen, L-1745 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>2 rue LÃ©on Hengen, L-1745 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.62433</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.15116</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>198</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>198</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>0</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>6</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Payant : 1.00 euro/ h  à partir de la 1ière heure et 2.00 euro/h à partir de la 5ième 
+Gratuit entre 22h00 et 07h00 (sous réserve de disponibilités)  
+Les premières 15 min sont gratuites 
+3 heures gratuites pour les usagers de la Coque (validation bornes/réception obligatoire)
+</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Kostenpflichtig: 1.00 Euro/St. ab der 1. Stunde und 2 Euro/ St. ab der 5. Stunde
+Kostenlos zwischen 22:00 und 07:00 (unter Vorbehalt freier Parkplätze)
+Die ersten 15 Minuten sind ebenfalls kostenlos.
+3 Stunden kostenlos für Coque-Kunden (Validation am Empfang erforderlich)</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>0</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>0</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur></vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>43 60 601</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Léon Hengen : Lignes 7, 12, 13.
+Arrêts Erasme, Coque : Lignes 1, 16.
+</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Léon Hengen: Linien 7, 12, 13.
+Haltestellen Erasme, Coque: Linien 1, 16.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_21.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=24</guid>
+			<id>24</id>
+			<title>Kirchberg</title>
+			<vdlxml:quartier lang="fr">Park and Ride</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Park and Ride</vdlxml:quartier>
+			<vdlxml:total>141</vdlxml:total>
+			<vdlxml:actuel></vdlxml:actuel>
+			<vdlxml:tendance></vdlxml:tendance>
+			<vdlxml:ouvert>-1</vdlxml:ouvert>
+			<vdlxml:complet></vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>10 Rue Hugo Gernsback, L-1652 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>10 Rue Hugo Gernsback, L-1652 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.63650</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.17400</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>260</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>260</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>0</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>5</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Gratuit.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Kostenlos.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>0</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>0</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur></vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone></vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Parking Foire : Lignes 1, 18, 25.
+</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Parking Foire: Linien 1, 18, 25.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_22.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=25</guid>
+			<id>25</id>
+			<title>Luxembourg Sud</title>
+			<vdlxml:quartier lang="fr">Park and Ride</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Park and Ride</vdlxml:quartier>
+			<vdlxml:total>881</vdlxml:total>
+			<vdlxml:actuel></vdlxml:actuel>
+			<vdlxml:tendance></vdlxml:tendance>
+			<vdlxml:ouvert>-1</vdlxml:ouvert>
+			<vdlxml:complet></vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>Rue FrÃ©dÃ©ric-Guillaume Raiffeisen, L-2411 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Rue FrÃ©dÃ©ric-Guillaume Raiffeisen, L-2411 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.57750</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.12833</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>877</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>877</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>0</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>4</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>21</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Gratuit.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Kostenlos.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>0</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>0</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>0</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur></vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone></vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt P+R Luxembourg-Sud : Ligne 22.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle P+R Luxembourg-Sud: Linie 22.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_23.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=26</guid>
+			<id>26</id>
+			<title>Kockelscheuer</title>
+			<vdlxml:quartier lang="fr">Park and Ride</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Park and Ride</vdlxml:quartier>
+			<vdlxml:total>597</vdlxml:total>
+			<vdlxml:actuel>595</vdlxml:actuel>
+			<vdlxml:tendance>-1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>Route de Bettembourg, L-1899 Kockelscheuer</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Route de Bettembourg, L-1899 Kockelscheuer</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.56500</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.10883</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>567</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>567</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>0</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>0</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Gratuit.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Kostenlos.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>0</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>0</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>0</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur></vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone></vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Kockelscheuer Patinoire : Ligne 18.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Kockelscheuer Patinoire: Linie 18.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_24.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=27</guid>
+			<id>27</id>
+			<title>Bouillon</title>
+			<vdlxml:quartier lang="fr">Park and Ride</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Park and Ride</vdlxml:quartier>
+			<vdlxml:total>2442</vdlxml:total>
+			<vdlxml:actuel>2320</vdlxml:actuel>
+			<vdlxml:tendance>1</vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>63 rue de Bouillon, L-1248 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>63 rue de Bouillon, L-1248 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.59933</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.10567</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>2450</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>200</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>2250</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>8</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>13</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>21</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>26</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Gratuit.
+A partir du 04.03.2013
+24 heures de stationnement gratuit,
+à partir de la 25e heure de stationnement, le tarif s'élèvera à 10 euro par journée entamée.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Kostenlos.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>0</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>0</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>26 12 37 70</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt P+R Bouillon : Lignes 1, 12, 15, 17, 24.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle P+R Bouillon: Linien 1, 12, 15, 17, 24.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_25.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=21</guid>
+			<id>21</id>
+			<title>Stade</title>
+			<vdlxml:quartier lang="fr">Centre</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Zentrum</vdlxml:quartier>
+			<vdlxml:total></vdlxml:total>
+			<vdlxml:actuel></vdlxml:actuel>
+			<vdlxml:tendance></vdlxml:tendance>
+			<vdlxml:ouvert>0</vdlxml:ouvert>
+			<vdlxml:complet></vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>13 Rue Ostende, L-2271 Luxembourg</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Rue Ostende, L-2271 Luxembourg</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.61400</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.10850</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>622</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>0</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>622</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>6</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">A partir du 01.02.2013
+De 8h00 à 18h00 :
+0h30 : 0,50 euro, 
+1h00 : 1,00 euro, 
+1h30 : 1,50 euro, 
+2h00 : 2,00 euro, 
+2h30 : 2,50 euro, 
+3h00 : 3,00 euro, 
+3h30 : 3,50 euro, 
+4h00 : 4,00 euro, 
+4h50 : 4,50 euro, 
+5h00 : 5,00 euro, 
+6h00 : 6,00 euro, 
+7h00 : 7,00 euro, 
+8h00 : 8,00 euro, 
+9h00 : 9,00 euro, 
+10h00 : 10,00 euro, 
+De 18h00 à 08h00 :
+0h30 : 0,40 euro, 
+1h00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Ab dem 01.02.2013
+Von 8:00 bis 18:00 Uhr:
+0St30 : 0,50 euro, 
+1St00 : 1,00 euro, 
+1St30 : 1,50 euro, 
+2St00 : 2,00 euro, 
+2St30 : 2,50 euro, 
+3St00 : 3,00 euro, 
+3St30 : 3,50 euro, 
+4St00 : 4,00 euro, 
+4St50 : 4,50 euro, 
+5St00 : 5,00 euro, 
+6St00 : 6,00 euro, 
+7St00 : 7,00 euro, 
+8St00 : 8,00 euro, 
+9St00 : 9,00 euro, 
+10h00 : 10,00 euro, 
+Von 18h00 bis 08h00 :
+0St30 : 0,40 euro, 
+1St00 : 0,80 euro.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>1</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>1</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>1</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions>
+				<vdlxml:restrictionsNoGpl>0</vdlxml:restrictionsNoGpl>
+				<vdlxml:restrictionsNoGNC>0</vdlxml:restrictionsNoGNC>
+				<vdlxml:restrictionsNoClous>1</vdlxml:restrictionsNoClous>
+				<vdlxml:restrictionsNoRemorque>1</vdlxml:restrictionsNoRemorque>
+				<vdlxml:restrictionsNo3t5>1</vdlxml:restrictionsNo3t5>
+				<vdlxml:restrictionsMaxHauteur>2,00 m</vdlxml:restrictionsMaxHauteur>
+			</vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>1</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone>48 13 36 330</vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">Arrêt Stade : Ligne 22.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Stade: Linie 22.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_26.jpg</vdlxml:pictureUrl>
+			</vdlxml:divers>
+		</item>
+		<item>
+			<guid>http://service.vdl.lu/export/circulation_guidageparking.php?vdl_f=detail&amp;vdl_id=28</guid>
+			<title>Beggen</title>
+			<vdlxml:quartier lang="fr">Park and Ride</vdlxml:quartier>
+			<vdlxml:quartier lang="de">Park and Ride</vdlxml:quartier>
+			<vdlxml:total>160</vdlxml:total>
+			<vdlxml:actuel></vdlxml:actuel>
+			<vdlxml:tendance></vdlxml:tendance>
+			<vdlxml:ouvert>1</vdlxml:ouvert>
+			<vdlxml:complet>0</vdlxml:complet>
+			<vdlxml:localisation>
+				<vdlxml:localisationEntree>Rue du Pont, L-7245 Bereldange</vdlxml:localisationEntree>
+				<vdlxml:localisationSortie>Rue du Pont, L-7245 Bereldange</vdlxml:localisationSortie>
+				<vdlxml:localisationLatitude>49.65000</vdlxml:localisationLatitude>
+				<vdlxml:localisationLongitude>6.12783</vdlxml:localisationLongitude>
+			</vdlxml:localisation>
+			<vdlxml:nominal>
+				<vdlxml:nominalTotal>160</vdlxml:nominalTotal>
+				<vdlxml:nominalSurface>160</vdlxml:nominalSurface>
+				<vdlxml:nominalCouvertes>0</vdlxml:nominalCouvertes>
+				<vdlxml:nominalHandicapes>2</vdlxml:nominalHandicapes>
+				<vdlxml:nominalFemmes>0</vdlxml:nominalFemmes>
+				<vdlxml:nominalVelos>0</vdlxml:nominalVelos>
+				<vdlxml:nominalMotos>0</vdlxml:nominalMotos>
+				<vdlxml:nominalAutocars>0</vdlxml:nominalAutocars>
+			</vdlxml:nominal>
+			<vdlxml:paiement>
+				<vdlxml:paiementTarif lang="fr">Gratuit.</vdlxml:paiementTarif>
+				<vdlxml:paiementTarif lang="de">Kostenlos.</vdlxml:paiementTarif>
+				<vdlxml:paiementEspeces>0</vdlxml:paiementEspeces>
+				<vdlxml:paiementMinicash>0</vdlxml:paiementMinicash>
+				<vdlxml:paiementMaestro>0</vdlxml:paiementMaestro>
+				<vdlxml:paiementVisa>0</vdlxml:paiementVisa>
+				<vdlxml:paiementMastercard>0</vdlxml:paiementMastercard>
+				<vdlxml:paiementEurocard>0</vdlxml:paiementEurocard>
+				<vdlxml:paiementAmex>0</vdlxml:paiementAmex>
+				<vdlxml:paiementCall2park>0</vdlxml:paiementCall2park>
+			</vdlxml:paiement>
+			<vdlxml:restrictions></vdlxml:restrictions>
+			<vdlxml:divers>
+				<vdlxml:diversAscenseur>0</vdlxml:diversAscenseur>
+				<vdlxml:diversTelephone></vdlxml:diversTelephone>
+				<vdlxml:diversLignebus lang="fr">ArrÃªt Beggen Rue du Pont : Lignes 10, 11.</vdlxml:diversLignebus>
+				<vdlxml:diversLignebus lang="de">Haltestelle Beggen Rue du Pont: Linien 10, 11.</vdlxml:diversLignebus>
+				<vdlxml:pictureUrl>http://service.vdl.lu/circulation/guidage_parking/media/photo_27.jpg</vdlxml:pictureUrl>				
+			</vdlxml:divers>
+		</item>
+	</channel>
+</rss>
