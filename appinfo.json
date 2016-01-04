@@ -1,21 +1,29 @@
 {
-  "uuid": "f823360d-236a-408a-9e01-cde86ff8032a",
-  "shortName": "LuxParking",
-  "longName": "LuxParking",
-  "companyName": "Olivier Gérardin",
-  "versionLabel": "0.1",
-  "sdkVersion": "3",
-  "targetPlatforms": ["aplite", "basalt", "chalk"],
-  "watchapp": {
-    "watchface": false
-  },
-  "appKeys": {
-      "messageType": 1,
-      "area": 2,
-      "parkingCapacity": 3,
-      "parkingOccupancy": 4
-  },
-  "resources": {
-    "media": []
-  }
+    "appKeys": {
+        "area": 2,
+        "messageType": 1,
+        "parkingCapacity": 3,
+        "parkingOccupancy": 4
+    },
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Olivier G\u00e9rardin",
+    "longName": "LuxParking",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "LuxParking",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "f823360d-236a-408a-9e01-cde86ff8032a",
+    "versionLabel": "0.1",
+    "watchapp": {
+        "watchface": false
+    }
 }

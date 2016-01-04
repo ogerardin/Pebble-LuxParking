@@ -45,6 +45,6 @@ function queryArea(area) {
         console.log('Error');
       }
     }
-  }
+  };
   req.send(null);
 }
