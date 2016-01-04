@@ -12,7 +12,15 @@
     "longName": "LuxParking",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/icon-parking.jpg",
+                "menuIcon": true,
+                "name": "IMG_APP_ICON",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "LuxParking",

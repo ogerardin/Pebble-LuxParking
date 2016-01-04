@@ -41,10 +41,12 @@ static int16_t get_cell_height_callback(struct MenuLayer *menu_layer, MenuIndex 
 static void select_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *context) {
   DictionaryIterator *iter;
   app_message_outbox_begin(&iter);
+//  dict_write_uint8(iter, KEY_MESSAGE_TYPE, MESSAGE_TYPE_GET_AREAS);
   dict_write_uint8(iter, KEY_MESSAGE_TYPE, MESSAGE_TYPE_QUERY_AREA);
   dict_write_uint8(iter, KEY_AREA, cell_index->row);
   app_message_outbox_send();
 }
+
 
 
 static void window_load(Window *window) {
@@ -84,25 +86,36 @@ static void main_window_close() {
   window_destroy(s_main_window);
 }
 
-void message_received(DictionaryIterator *iter, void *context) {
+static void message_received(DictionaryIterator *iter, void *context) {
   Tuple *message_type = dict_find(iter, KEY_MESSAGE_TYPE);
   if(!message_type) {
     return;
   }
-  if(message_type->value->uint8 == MESSAGE_TYPE_PARKING_STATUS) {
-    uint16_t capacity = dict_find(iter, KEY_PARKING_CAPACITY)->value->uint16;
-    uint16_t occupancy = dict_find(iter, KEY_PARKING_OCCUPANCY)->value->uint16;
-    APP_LOG(APP_LOG_LEVEL_DEBUG, "parking status received: capacity=%d, occupancy=%d", capacity, occupancy);
-    //TODO show parking status
+  switch (message_type->value->uint8) {
+    uint16_t capacity;
+    uint16_t occupancy;
+    case MESSAGE_TYPE_PARKING_STATUS:
+      capacity = dict_find(iter, KEY_PARKING_CAPACITY)->value->uint16;
+      occupancy = dict_find(iter, KEY_PARKING_OCCUPANCY)->value->uint16;
+      APP_LOG(APP_LOG_LEVEL_DEBUG, "parking status received: capacity=%d, occupancy=%d", capacity, occupancy);
+      //TODO show parking status
+      break;
+    default:
+      APP_LOG(APP_LOG_LEVEL_ERROR, "UNKNOWN MESSAGE TYPE: %d", message_type->value->uint8);
+      break;
   }
   
+}
+
+static void send_message_failed(DictionaryIterator *iterator, AppMessageResult reason, void *context) {
+  APP_LOG(APP_LOG_LEVEL_ERROR, "SEND MESSAGE FAILED: %d", reason);
 }
 
 static void messaging_init() {
   app_message_register_inbox_received(message_received);
 //  app_message_register_inbox_dropped(message_dropped);
 //  app_message_register_outbox_sent(message_sent);
-//  app_message_register_outbox_failed(message_failed)
+  app_message_register_outbox_failed(send_message_failed);
   app_message_open(app_message_inbox_size_maximum(), app_message_outbox_size_maximum());
 }
 

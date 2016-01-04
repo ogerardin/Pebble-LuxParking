@@ -16,6 +16,7 @@ typedef enum {
 } MessageKey;
 
 typedef enum {
-    MESSAGE_TYPE_PARKING_STATUS = 1,
-    MESSAGE_TYPE_QUERY_AREA = 2
+  MESSAGE_TYPE_PARKING_STATUS = 1,
+  MESSAGE_TYPE_QUERY_AREA = 2,
+  MESSAGE_TYPE_GET_AREAS = 3,
 } MessageType;
