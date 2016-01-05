@@ -7,96 +7,107 @@
 //
 
 #include <pebble.h>
+#include "lib/pebble-assist.h"
 #include "messaging.h"
+#include "areas_ui.h"
 #include "areas.h"
 
 static Area *areas = NULL;
 static uint8_t num_areas = 0;
 static uint8_t current_area = 0;
 
-#define NUM_AREAS 4
+static char *error = NULL;
 
-static Window *s_main_window;
-static MenuLayer *s_menu_layer;
-
-
-static uint16_t get_num_rows_callback(MenuLayer *menu_layer, uint16_t section_index, void *context) {
-    return NUM_AREAS;
+void areas_init() {
+  areas_ui_init();
 }
 
-static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex *cell_index, void *context) {
-    switch(cell_index->row) {
-        case 0:
-            menu_cell_basic_draw(ctx, cell_layer, "Centre", NULL, NULL);
-            break;
-        case 1:
-            menu_cell_basic_draw(ctx, cell_layer, "Gare", NULL, NULL);
-            break;
-        case 2:
-            menu_cell_basic_draw(ctx, cell_layer, "Kirchberg", NULL, NULL);
-            break;
-        case 3:
-            menu_cell_basic_draw(ctx, cell_layer, "P+R", NULL, NULL);
-            break;
-        default:
-            break;
-    }
+void areas_finalize() {
+  free_safe(error);
+	free_safe(areas);
+	areas_ui_finalize();
 }
 
-static int16_t get_cell_height_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *context) {
-    return PBL_IF_ROUND_ELSE(
-                             menu_layer_is_index_selected(menu_layer, cell_index) ?
-                             MENU_CELL_ROUND_FOCUSED_SHORT_CELL_HEIGHT : MENU_CELL_ROUND_UNFOCUSED_TALL_CELL_HEIGHT,
-                             /*CHECKBOX_WINDOW_CELL_HEIGHT*/ 32);
+void areas_in_received_handler(DictionaryIterator *iter) {
+	Tuple *tuple = dict_find(iter, KEY_METHOD);
+	if (!tuple) return;
+	free_safe(error);
+	switch (tuple->value->uint8) {
+		case METHOD_REPLY_ERROR: {
+			tuple = dict_find(iter, KEY_ERROR);
+			if (!tuple) break;
+			error = malloc(tuple->length);
+			strncpy(error, tuple->value->cstring, tuple->length);
+			areas_reload_data_and_mark_dirty();
+			break;
+		}
+		case METHOD_REPLY_COUNT:
+			free_safe(areas);
+			tuple = dict_find(iter, KEY_INDEX);
+			if (!tuple) break;
+			num_areas = tuple->value->uint8;
+			areas = malloc(sizeof(Area) * num_area);
+			if (areas == NULL) num_areas = 0;
+			break;
+		case METHOD_REPLY_ITEM: {
+			if (!areas_count()) break;
+			tuple = dict_find(iter, KEY_INDEX);
+			if (!tuple) break;
+			uint8_t index = tuple->value->uint8;
+			Area *area = areas_get(index);
+			area->index = index;
+			tuple = dict_find(iter, KEY_NAME);
+			if (tuple) {
+				strncpy(area->name, tuple->value->cstring, sizeof(area->name) - 1);
+			}
+			LOG("area: %d '%s'", area->index, area->title);
+			areas_reload_data_and_mark_dirty();
+			break;
+		}
+	}
 }
 
-
-static void select_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *context) {
-    DictionaryIterator *iter;
-    app_message_outbox_begin(&iter);
-    //  dict_write_uint8(iter, KEY_MESSAGE_TYPE, MESSAGE_TYPE_GET_AREAS);
-    dict_write_uint8(iter, KEY_MESSAGE_TYPE, MESSAGE_TYPE_QUERY_AREA);
-    dict_write_uint8(iter, KEY_AREA, cell_index->row);
-    app_message_outbox_send();
+void areas_reload_data_and_mark_dirty() {
+	areas_ui_reload_data_and_mark_dirty();
 }
 
-
-
-static void window_load(Window *window) {
-    Layer *window_layer = window_get_root_layer(window);
-    GRect bounds = layer_get_bounds(window_layer);
-    
-    s_menu_layer = menu_layer_create(bounds);
-    menu_layer_set_click_config_onto_window(s_menu_layer, window);
-#if defined(PBL_COLOR)
-    menu_layer_set_normal_colors(s_menu_layer, GColorBlack, GColorWhite);
-    menu_layer_set_highlight_colors(s_menu_layer, GColorRed, GColorWhite);
-#endif
-    menu_layer_set_callbacks(s_menu_layer, NULL, (MenuLayerCallbacks) {
-        .get_num_rows = get_num_rows_callback,
-        .draw_row = draw_row_callback,
-        .get_cell_height = get_cell_height_callback,
-        .select_click = select_callback,
-    });
-    layer_add_child(window_layer, menu_layer_get_layer(s_menu_layer));
+uint8_t areas_count() {
+	return num_areas;
 }
 
-static void window_unload(Window *window) {
-    menu_layer_destroy(s_menu_layer);
+char* areas_get_error() {
+	return (error == NULL && !areas_count()) ? "Loading..." : error;
 }
 
-
-void areas_window_init() {
-    s_main_window = window_create();
-    window_set_window_handlers(s_main_window, (WindowHandlers) {
-        .load = window_load,
-        .unload = window_unload,
-    });
-    window_stack_push(s_main_window, true);
+Area* areas_get(uint8_t index) {
+	return (index < areas_count()) ? &areas[index] : NULL;
 }
 
-void areas_window_close() {
-    window_destroy(s_main_window);
+Area* areas_get_current() {
+	return &areas[current_area];
 }
 
+uint8_t areas_get_current_index() {
+	return current_area;
+}
+
+void areas_set_current(uint8_t index) {
+	current_area = index;
+}
+
+void areas_request() {
+//	for (int i = 0; i < num_headlines; i++) {
+//		memset(areas_get(i)->name, 0x0, sizeof(areas_get(i)->name));
+//	}
+	num_areas = 0;
+	free_safe(areas);
+	free_safe(error);
+	DictionaryIterator *iter;
+	app_message_outbox_begin(&iter);
+	dict_write_uint8(iter, KEY_TYPE, TYPE_AREA);
+	dict_write_uint8(iter, KEY_METHOD, METHOD_REQUEST_GET);
+	dict_write_end(iter);
+	app_message_outbox_send();
+	areas_reload_data_and_mark_dirty();
+}
 

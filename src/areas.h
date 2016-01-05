@@ -17,5 +17,5 @@ typedef struct {
     uint16_t occupancy;
 } Area;
 
-void areas_window_init();
-void areas_window_close();
+void areas_init();
+void areas_finalize();

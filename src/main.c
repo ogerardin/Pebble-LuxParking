@@ -1,23 +1,25 @@
 #include <pebble.h>
+#include <inttypes.h>
 #include "messaging.h"
 #include "areas.h"
+#include "areas_ui.h"
 
 
 static void message_received(DictionaryIterator *iter, void *context) {
-  Tuple *message_type = dict_find(iter, KEY_MESSAGE_TYPE);
+  Tuple *message_type = dict_find(iter, KEY_TYPE);
   if(!message_type) {
     return;
   }
   switch (message_type->value->uint8) {
 
-    case MESSAGE_TYPE_PARKING_INFO: {
+    case TYPE_PARKING: {
         int32_t capacity = dict_find(iter, KEY_CAPACITY)->value->int32;
         int32_t occupancy = dict_find(iter, KEY_OCCUPANCY)->value->int32;
-        APP_LOG(APP_LOG_LEVEL_DEBUG, "parking status received: capacity=%ld, occupancy=%ld", capacity, occupancy);
+        APP_LOG(APP_LOG_LEVEL_DEBUG, "parking status received: capacity=%" PRId32 ", occupancy=%" PRId32 "", capacity, occupancy);
         //TODO do something with it
       }
       break;
-    case MESSAGE_TYPE_AREA_INFO: {
+    case TYPE_AREA: {
         APP_LOG(APP_LOG_LEVEL_DEBUG, "Area status received");
         //TODO do something with it
       }
@@ -43,9 +45,9 @@ static void messaging_init() {
 
 int main(void) {
   messaging_init();
-  areas_window_init();
+  areas_ui_init();
   app_event_loop();
-  areas_window_close();
+  areas_ui_finalize();
 }
 
 
