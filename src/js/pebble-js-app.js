@@ -25,7 +25,7 @@ Pebble.addEventListener("appmessage",
 function queryArea(data, param) {
   data.rss.channel.item.forEach(function(item) {
     console.log("Parking " + item.title + " (" + item.quartier[0].__content__ + "): " + item.actuel + "/" + item.total);
-    //Pebble.sendAppMessage({"messageType": 1, "parkingCapacity":item.total, "parkingOccupancy": item.actuel});
+    Pebble.sendAppMessage({"messageType": 1, "capacity": parseInt(item.total), "occupancy": parseInt(item.actuel)});
   });
 }
 
@@ -38,7 +38,9 @@ function getAreas(data, param) {
       areas.push(area);
       console.log("+Ajout quartier: " + area);
     }
-    //Pebble.sendAppMessage({"messageType": 1, "area": area});
+  });
+  areas.forEach(function(area) {
+    Pebble.sendAppMessage({"messageType": 4, "area": area});
   });
 }
 

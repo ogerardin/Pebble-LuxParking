@@ -1,90 +1,7 @@
 #include <pebble.h>
 #include "messaging.h"
+#include "areas.h"
 
-#define NUM_AREAS 4
-
-static Window *s_main_window;
-static MenuLayer *s_menu_layer;
-
-
-static uint16_t get_num_rows_callback(MenuLayer *menu_layer, uint16_t section_index, void *context) {
-  return NUM_AREAS;
-}
-
-static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex *cell_index, void *context) {
-  switch(cell_index->row) {
-    case 0:
-      menu_cell_basic_draw(ctx, cell_layer, "Centre", NULL, NULL);
-      break;
-    case 1:
-      menu_cell_basic_draw(ctx, cell_layer, "Gare", NULL, NULL);
-      break;
-    case 2:
-      menu_cell_basic_draw(ctx, cell_layer, "Kirchberg", NULL, NULL);
-      break;
-    case 3:
-      menu_cell_basic_draw(ctx, cell_layer, "P+R", NULL, NULL);
-      break;
-    default:
-      break;
-  }
-}
-
-static int16_t get_cell_height_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *context) {
-  return PBL_IF_ROUND_ELSE(
-                           menu_layer_is_index_selected(menu_layer, cell_index) ?
-                           MENU_CELL_ROUND_FOCUSED_SHORT_CELL_HEIGHT : MENU_CELL_ROUND_UNFOCUSED_TALL_CELL_HEIGHT,
-                           /*CHECKBOX_WINDOW_CELL_HEIGHT*/ 32);
-}
-
-
-static void select_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *context) {
-  DictionaryIterator *iter;
-  app_message_outbox_begin(&iter);
-//  dict_write_uint8(iter, KEY_MESSAGE_TYPE, MESSAGE_TYPE_GET_AREAS);
-  dict_write_uint8(iter, KEY_MESSAGE_TYPE, MESSAGE_TYPE_QUERY_AREA);
-  dict_write_uint8(iter, KEY_AREA, cell_index->row);
-  app_message_outbox_send();
-}
-
-
-
-static void window_load(Window *window) {
-  Layer *window_layer = window_get_root_layer(window);
-  GRect bounds = layer_get_bounds(window_layer);
-  
-  s_menu_layer = menu_layer_create(bounds);
-  menu_layer_set_click_config_onto_window(s_menu_layer, window);
-#if defined(PBL_COLOR)
-  menu_layer_set_normal_colors(s_menu_layer, GColorBlack, GColorWhite);
-  menu_layer_set_highlight_colors(s_menu_layer, GColorRed, GColorWhite);
-#endif
-  menu_layer_set_callbacks(s_menu_layer, NULL, (MenuLayerCallbacks) {
-    .get_num_rows = get_num_rows_callback,
-    .draw_row = draw_row_callback,
-    .get_cell_height = get_cell_height_callback,
-    .select_click = select_callback,
-  });
-  layer_add_child(window_layer, menu_layer_get_layer(s_menu_layer));
-}
-
-static void window_unload(Window *window) {
-  menu_layer_destroy(s_menu_layer);
-}
-
-
-static void main_window_init() {
-  s_main_window = window_create();
-  window_set_window_handlers(s_main_window, (WindowHandlers) {
-    .load = window_load,
-    .unload = window_unload,
-  });
-  window_stack_push(s_main_window, true);
-}
-
-static void main_window_close() {
-  window_destroy(s_main_window);
-}
 
 static void message_received(DictionaryIterator *iter, void *context) {
   Tuple *message_type = dict_find(iter, KEY_MESSAGE_TYPE);
@@ -92,13 +9,18 @@ static void message_received(DictionaryIterator *iter, void *context) {
     return;
   }
   switch (message_type->value->uint8) {
-    uint16_t capacity;
-    uint16_t occupancy;
-    case MESSAGE_TYPE_PARKING_STATUS:
-      capacity = dict_find(iter, KEY_PARKING_CAPACITY)->value->uint16;
-      occupancy = dict_find(iter, KEY_PARKING_OCCUPANCY)->value->uint16;
-      APP_LOG(APP_LOG_LEVEL_DEBUG, "parking status received: capacity=%d, occupancy=%d", capacity, occupancy);
-      //TODO show parking status
+
+    case MESSAGE_TYPE_PARKING_INFO: {
+        int32_t capacity = dict_find(iter, KEY_CAPACITY)->value->int32;
+        int32_t occupancy = dict_find(iter, KEY_OCCUPANCY)->value->int32;
+        APP_LOG(APP_LOG_LEVEL_DEBUG, "parking status received: capacity=%ld, occupancy=%ld", capacity, occupancy);
+        //TODO do something with it
+      }
+      break;
+    case MESSAGE_TYPE_AREA_INFO: {
+        APP_LOG(APP_LOG_LEVEL_DEBUG, "Area status received");
+        //TODO do something with it
+      }
       break;
     default:
       APP_LOG(APP_LOG_LEVEL_ERROR, "UNKNOWN MESSAGE TYPE: %d", message_type->value->uint8);
@@ -120,10 +42,10 @@ static void messaging_init() {
 }
 
 int main(void) {
-  main_window_init();
   messaging_init();
+  areas_window_init();
   app_event_loop();
-  main_window_close();
+  areas_window_close();
 }
 
 

@@ -1,9 +1,10 @@
 {
     "appKeys": {
-        "area": 2,
         "messageType": 1,
-        "parkingCapacity": 3,
-        "parkingOccupancy": 4
+        "area": 2,
+        "capacity": 3,
+        "occupancy": 4,
+        "parkingId": 5
     },
     "capabilities": [
         ""
