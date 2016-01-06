@@ -8,10 +8,13 @@ The first screen shows a list of city areas. If you select an area, you will see
 * on color watches, the text will be green if the parking has available spaces, red if it's full
 
 ## Yet to do
+* Speed improvements. Refresh is much slower on the actual device than on the emulator.
 * Add a screen to display full detail for a selected parking 
 * Avoid redrawing all items each time an item is added
-* Display "loading" message before updating parking list (instead of the previous results currently)
-* Sort parkings? (by what?)
+* Auto-refresh parking data 
+* Sort parkings (by what?)
 * Add some configuration options
-* Alternative solution for XML to JSON ?
+* Store last selected area
+* i18n
+* Alternative solution for XML to JSON 
 

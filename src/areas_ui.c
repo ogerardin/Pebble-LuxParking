@@ -34,17 +34,8 @@ static int16_t get_cell_height_callback(struct MenuLayer *menu_layer, MenuIndex 
 
 static void select_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *context) {
   if (!areas_count()) return;
-	areas_set_current(cell_index->row);
+  areas_set_current(cell_index->row);
   parkings_ui_push();
-  
-  // send request to get all parkings for selected area
-  DictionaryIterator *iter;
-  app_message_outbox_begin(&iter);
-  dict_write_uint8(iter, KEY_TYPE, TYPE_PARKING);
-  dict_write_uint8(iter, KEY_METHOD, METHOD_REQUEST_GET);
-  dict_write_cstring(iter, KEY_AREA, areas_get_current()->name);
-  DEBUG("sending request");
-  app_message_outbox_send();
 }
 
 

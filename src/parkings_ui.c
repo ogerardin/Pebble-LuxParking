@@ -29,7 +29,11 @@ static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex 
 #if defined(PBL_COLOR)
     if (parking->free >= 0) {
       // the number of free spaces is available: set color to red if full, green otherwise
-      graphics_context_set_text_color(ctx, (parking->free == 0) ? GColorRed : GColorDarkGreen);
+      graphics_context_set_text_color(ctx,
+                                      (parking->free == 0) ?
+                                        ColorRed :
+                                        (menu_cell_layer_is_highlighted(cell_layer) ? GColorGreen : GColorDarkGreen)
+                                      );
     }
 #endif
     char subtitle[32];
@@ -37,7 +41,7 @@ static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex 
       snprintf(subtitle, sizeof(subtitle), "%" PRId16 "/%" PRId16 "", parking->free, parking->capacity);
     }
     else {
-      snprintf(subtitle, sizeof(subtitle), "?/%" PRId16 "", parking->capacity);
+      snprintf(subtitle, sizeof(subtitle), "---/%" PRId16 "", parking->capacity);
     }
     GBitmap *bitmap_trend = NULL;
     switch (parking->trend) {
@@ -106,7 +110,7 @@ void parkings_ui_init() {
 
 void parkings_ui_push() {
 	window_stack_push(window, true);
-//	parkings_request();
+	parkings_request();
 }
 
 void parkings_ui_finalize() {

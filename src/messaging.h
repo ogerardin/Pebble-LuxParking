@@ -36,7 +36,7 @@ typedef enum {
   /** Key for current parking occupancy trend; used with type=PARKING and method=REPLY_ITEM */
   KEY_TREND = 10,
   /** Key for area name */
-  KEY_AREA = 11,
+  KEY_AREA = 11
   
 } MessageKey;
 
@@ -64,6 +64,6 @@ typedef enum {
   METHOD_REPLY_ITEM = 3,
   
   /** Message is a reply specifying that an error occured */
-  METHOD_REPLY_ERROR = 4,
+  METHOD_REPLY_ERROR = 4
 } MessageMethod;
 

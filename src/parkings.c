@@ -11,6 +11,7 @@
 #include "lib/pebble-assist.h"
 
 #include "messaging.h"
+#include "areas.h"
 #include "parkings_ui.h"
 #include "parkings.h"
 
@@ -114,12 +115,18 @@ void parkings_request() {
 	num_parkings = 0;
 	free_safe(parkings);
 	free_safe(error);
-	DictionaryIterator *iter;
-	app_message_outbox_begin(&iter);
-	dict_write_uint8(iter, KEY_TYPE, TYPE_PARKING);
-	dict_write_uint8(iter, KEY_METHOD, METHOD_REQUEST_GET);
-	dict_write_end(iter);
-	app_message_outbox_send();
+
+    // send request to get all parkings for selected area
+    DictionaryIterator *iter;
+    app_message_outbox_begin(&iter);
+    dict_write_uint8(iter, KEY_TYPE, TYPE_PARKING);
+    dict_write_uint8(iter, KEY_METHOD, METHOD_REQUEST_GET);
+    dict_write_cstring(iter, KEY_AREA, areas_get_current()->name);
+    DEBUG("sending request");
+    app_message_outbox_send();
+
 	parkings_reload_data_and_mark_dirty();
+    
+    
 }
 

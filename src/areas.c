@@ -109,12 +109,14 @@ void areas_request() {
 	num_areas = 0;
 	free_safe(areas);
 	free_safe(error);
+  
 	DictionaryIterator *iter;
 	app_message_outbox_begin(&iter);
 	dict_write_uint8(iter, KEY_TYPE, TYPE_AREA);
 	dict_write_uint8(iter, KEY_METHOD, METHOD_REQUEST_GET);
 	dict_write_end(iter);
 	app_message_outbox_send();
+  
 	areas_reload_data_and_mark_dirty();
 }
 
