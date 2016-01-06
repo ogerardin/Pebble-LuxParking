@@ -1,4 +1,4 @@
-# LuxParking
+# LuxParking [![Build Status](https://travis-ci.org/ogerardin/LuxParking.svg?branch=master)](https://travis-ci.org/ogerardin/LuxParking)
 A Pebble watchapp for displaying parking occupancy in Luxembourg city using the RSS feed provided by Ville de Luxembourg: http://service.vdl.lu/rss/circulation_guidageparking.php
 
 ## Usage
