@@ -32,7 +32,7 @@ typedef enum {
   /** Key for parking capacity; used with type=PARKING and method=REPLY_ITEM */
   KEY_CAPACITY = 8,
   /** Key for current parking occupancy; used with type=PARKING and method=REPLY_ITEM */
-  KEY_OCCUPANCY = 9,
+  KEY_FREE = 9,
   /** Key for current parking occupancy trend; used with type=PARKING and method=REPLY_ITEM */
   KEY_TREND = 10,
   /** Key for area name */

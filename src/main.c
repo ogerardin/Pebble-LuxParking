@@ -4,6 +4,7 @@
 
 #include "messaging.h"
 #include "areas.h"
+#include "parkings.h"
 #include "areas_ui.h"
 
 static char *error = NULL;
@@ -14,7 +15,7 @@ char* get_error() {
 
 void reload_data_and_mark_dirty() {
   areas_reload_data_and_mark_dirty();
-//  parkings_reload_data_and_mark_dirty();
+  parkings_reload_data_and_mark_dirty();
 }
 
 static void message_received(DictionaryIterator *iter, void *context) {
@@ -35,7 +36,7 @@ static void message_received(DictionaryIterator *iter, void *context) {
 //        int32_t capacity = dict_find(iter, KEY_CAPACITY)->value->int32;
 //        int32_t occupancy = dict_find(iter, KEY_OCCUPANCY)->value->int32;
         DEBUG("Parking message received");
-        //parkings_in_received_handler
+        parkings_in_received_handler(iter);
       }
       break;
     case TYPE_AREA: {
@@ -61,13 +62,13 @@ static void init() {
   app_message_open_max();
   
   areas_init();
-//  parkings_init();
+  parkings_init();
 }
 
 static void finalize() {
   free_safe(error);
   areas_finalize();
-//  parkings_finalize();
+  parkings_finalize();
 }
 
 

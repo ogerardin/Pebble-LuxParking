@@ -1,3 +1,5 @@
+#pragma once
+
 void areas_ui_init();
 void areas_ui_push();
 void areas_ui_finalize();

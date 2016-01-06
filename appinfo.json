@@ -1,16 +1,16 @@
 {
     "appKeys": {
-        "type": 1,
-        "method": 2,
-        "error": 3,
-        "count": 4,
-        "index": 5,
-        "name": 6,
-        "id": 7,
+        "area": 11,
         "capacity": 8,
-        "occupancy": 9,
+        "count": 4,
+        "error": 3,
+        "free": 9,
+        "id": 7,
+        "index": 5,
+        "method": 2,
+        "name": 6,
         "trend": 10,
-        "area": 11
+        "type": 1
     },
     "capabilities": [
         ""
@@ -20,6 +20,24 @@
     "projectType": "native",
     "resources": {
         "media": [
+            {
+                "file": "images/arrow_down.png",
+                "name": "IMG_TREND_DOWN",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/arrow_flat.png",
+                "name": "IMG_TREND_FLAT",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/arrow_up.png",
+                "name": "IMG_TREND_UP",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
             {
                 "file": "images/icon-parking.jpg",
                 "menuIcon": true,
@@ -37,7 +55,7 @@
         "chalk"
     ],
     "uuid": "f823360d-236a-408a-9e01-cde86ff8032a",
-    "versionLabel": "0.1",
+    "versionLabel": "0.2",
     "watchapp": {
         "watchface": false
     }

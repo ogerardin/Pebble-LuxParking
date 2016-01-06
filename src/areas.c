@@ -46,33 +46,28 @@ void areas_in_received_handler(DictionaryIterator *iter) {
 			break;
 		}
 		case METHOD_REPLY_COUNT:
-      DEBUG("handling REPLY_COUNT");
 			free_safe(areas);
 			Tuple *count_tuple = dict_find(iter, KEY_COUNT);
 			if (!count_tuple) break;
 			num_areas = (uint8_t) count_tuple->value->int32;
-      DEBUG("num_areas=%" PRIu8 "", num_areas);
 			areas = malloc(sizeof(Area) * num_areas);
       if (areas == NULL) {
           num_areas = 0;
       }
 			break;
 		case METHOD_REPLY_ITEM: {
-      DEBUG("handling REPLY_ITEM");
 			if (!areas_count()) break;
 			Tuple *index_tuple = dict_find(iter, KEY_INDEX);
 			if (!index_tuple) break;
 			uint8_t index = (uint8_t) index_tuple->value->int32;
-      DEBUG("index=%" PRIu8 "", index);
 			Area *area = areas_get(index);
       if (!area) break;
 			area->index = index;
 			Tuple *name_tuple = dict_find(iter, KEY_NAME);
 			if (name_tuple) {
-        DEBUG("name=%s", name_tuple->value->cstring);
 				strncpy(area->name, name_tuple->value->cstring, sizeof(area->name) - 1);
 			}
-			DEBUG("area: %d '%s'", area->index, area->name);
+			DEBUG("Area[%d] = '%s'", area->index, area->name);
 			areas_reload_data_and_mark_dirty();
 			break;
 		}

@@ -76,7 +76,7 @@ LuxParking.queryRss = function(callback, param) {
   };
   console.log("Sending HTTP request");
   req.send(null);
-}
+};
 
 
 LuxParking.sendParkings = function(data, param) {
@@ -100,18 +100,22 @@ LuxParking.sendParkings = function(data, param) {
   for (var i=0; i<parkings.length; i++){
     var parking = parkings[i];
     var area = parking.quartier[0].__content__;
+    var free = parking.actuel ? parseInt(parking.actuel) : -1;
+    var capacity = parking.total ? parseInt(parking.total) : -1;
+    var trend = parking.tendance ? parseInt(parking.tendance) : 99; //anything other than -1, 0, 1 will do
     appMessageQueue.send({
-                         "type": 1, // PARKING,
-                         "method": 3, // REPLY_ITEM
-                         "index": i,
-                         "id": parking.id,
-                         "name": parking.title,
-                         "area": area,
-                         "capacity": parseInt(parking.total),
-                         "occupancy": parseInt(parking.actuel)
-                         });
+      "type": 1, // PARKING,
+      "method": 3, // REPLY_ITEM
+      "index": i,
+      "id": parking.id,
+      "name": parking.title,
+      "area": area,
+      "capacity": capacity,
+      "free": free,
+      "trend": trend
+    });
   }
-}
+};
 
 
 LuxParking.sendAreas = function(data, param) {
@@ -139,7 +143,7 @@ LuxParking.sendAreas = function(data, param) {
                          "name": areas[i]
                          });
   }
-}
+};
 
 
 LuxParking.handleAppMessage = function(e) {
@@ -161,12 +165,12 @@ LuxParking.handleAppMessage = function(e) {
       }
       break;
   }
-}
+};
 
 LuxParking.init = function() {
   console.log("App ready!");
   LuxParking.queryRss(LuxParking.sendAreas, null);
-}
+};
 
 
 
