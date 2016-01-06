@@ -1,0 +1,32 @@
+# source https://github.com/victorhaggqvist/Pebble-TravisCI-Config
+language: python
+
+# 2.7 is the only version officially supported
+python:
+  - "2.7"
+
+script:
+- pebble-dev/bin/pebble build
+
+before_install:
+- wget -O PebbleSDK.tar.bz2 https://s3.amazonaws.com/assets.getpebble.com/pebble-tool/pebble-sdk-$PEBBLE_TOOL-linux64.tar.bz2
+- mkdir pebble-dev
+- tar xjf PebbleSDK.tar.bz2
+- mv pebble-sdk*/* pebble-dev
+
+install:
+- pip install --upgrade pip # just to future proof, since travis seem to hang behind
+- cd pebble-dev
+- virtualenv --no-site-packages .env
+- source .env/bin/activate
+- pip install --install-option="--no-cython-compile" cython
+- "pip install -r requirements.txt"
+- mkdir ~/.pebble-sdk
+- touch ~/.pebble-sdk/NO_TRACKING
+- echo y | bin/pebble sdk install $PEBBLE_SDK
+- cd ..
+
+env:
+  global:
+  - PEBBLE_SDK=3.8.2
+  - PEBBLE_TOOL=4.0
