@@ -1,15 +1,16 @@
 {
     "appKeys": {
-        "capacity": 8,
-        "count": 4,
-        "error": 3,
-        "id": 7,
-        "index": 5,
+        "type": 1,
         "method": 2,
+        "error": 3,
+        "count": 4,
+        "index": 5,
         "name": 6,
+        "id": 7,
+        "capacity": 8,
         "occupancy": 9,
         "trend": 10,
-        "type": 1
+        "area": 11
     },
     "capabilities": [
         ""

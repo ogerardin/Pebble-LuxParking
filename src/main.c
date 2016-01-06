@@ -1,53 +1,80 @@
-#include <pebble.h>
 #include <inttypes.h>
+#include <pebble.h>
+#include "lib/pebble-assist.h"
+
 #include "messaging.h"
 #include "areas.h"
 #include "areas_ui.h"
 
+static char *error = NULL;
+
+char* get_error() {
+  return error;
+}
+
+void reload_data_and_mark_dirty() {
+  areas_reload_data_and_mark_dirty();
+//  parkings_reload_data_and_mark_dirty();
+}
 
 static void message_received(DictionaryIterator *iter, void *context) {
   Tuple *message_type = dict_find(iter, KEY_TYPE);
-  if(!message_type) {
-    return;
-  }
-  switch (message_type->value->uint8) {
+  if (!message_type) return;
 
+  free_safe(error);
+  uint8_t type = message_type->value->uint8;
+  switch (type) {
+    case TYPE_ERROR: {
+      Tuple* error_tuple = dict_find(iter, KEY_ERROR);
+      if (!error_tuple) break;
+      error = malloc(error_tuple->length);
+      strncpy(error, error_tuple->value->cstring, error_tuple->length);
+      reload_data_and_mark_dirty();
+    }
     case TYPE_PARKING: {
-        int32_t capacity = dict_find(iter, KEY_CAPACITY)->value->int32;
-        int32_t occupancy = dict_find(iter, KEY_OCCUPANCY)->value->int32;
-        APP_LOG(APP_LOG_LEVEL_DEBUG, "parking status received: capacity=%" PRId32 ", occupancy=%" PRId32 "", capacity, occupancy);
-        //TODO do something with it
+//        int32_t capacity = dict_find(iter, KEY_CAPACITY)->value->int32;
+//        int32_t occupancy = dict_find(iter, KEY_OCCUPANCY)->value->int32;
+        DEBUG("Parking message received");
+        //parkings_in_received_handler
       }
       break;
     case TYPE_AREA: {
-        APP_LOG(APP_LOG_LEVEL_DEBUG, "Area status received");
-        //TODO do something with it
+        DEBUG("Area message received");
+        areas_in_received_handler(iter);
       }
       break;
     default:
-      APP_LOG(APP_LOG_LEVEL_ERROR, "UNKNOWN MESSAGE TYPE: %d", message_type->value->uint8);
+      ERROR("UNKNOWN MESSAGE TYPE: %d", type);
       break;
   }
-  
 }
 
 static void send_message_failed(DictionaryIterator *iterator, AppMessageResult reason, void *context) {
-  APP_LOG(APP_LOG_LEVEL_ERROR, "SEND MESSAGE FAILED: %d", reason);
+  ERROR("SEND MESSAGE FAILED: %d", reason);
 }
 
-static void messaging_init() {
+static void init() {
   app_message_register_inbox_received(message_received);
 //  app_message_register_inbox_dropped(message_dropped);
 //  app_message_register_outbox_sent(message_sent);
   app_message_register_outbox_failed(send_message_failed);
-  app_message_open(app_message_inbox_size_maximum(), app_message_outbox_size_maximum());
+  app_message_open_max();
+  
+  areas_init();
+//  parkings_init();
 }
 
+static void finalize() {
+  free_safe(error);
+  areas_finalize();
+//  parkings_finalize();
+}
+
+
 int main(void) {
-  messaging_init();
-  areas_ui_init();
+  init();
   app_event_loop();
-  areas_ui_finalize();
+  finalize();
 }
 
 

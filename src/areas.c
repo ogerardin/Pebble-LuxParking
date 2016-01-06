@@ -6,8 +6,10 @@
 //  Copyright © 2016 Olivier Gérardin. All rights reserved.
 //
 
+#include <inttypes.h>
 #include <pebble.h>
 #include "lib/pebble-assist.h"
+
 #include "messaging.h"
 #include "areas_ui.h"
 #include "areas.h"
@@ -24,43 +26,53 @@ void areas_init() {
 
 void areas_finalize() {
   free_safe(error);
-	free_safe(areas);
-	areas_ui_finalize();
+  free_safe(areas);
+  areas_ui_finalize();
 }
 
 void areas_in_received_handler(DictionaryIterator *iter) {
-	Tuple *tuple = dict_find(iter, KEY_METHOD);
-	if (!tuple) return;
+	Tuple *method_tuple = dict_find(iter, KEY_METHOD);
+	if (!method_tuple) return;
 	free_safe(error);
-	switch (tuple->value->uint8) {
+    
+  uint8_t method = method_tuple->value->uint8;
+	switch (method) {
 		case METHOD_REPLY_ERROR: {
-			tuple = dict_find(iter, KEY_ERROR);
-			if (!tuple) break;
-			error = malloc(tuple->length);
-			strncpy(error, tuple->value->cstring, tuple->length);
+			Tuple *error_tuple = dict_find(iter, KEY_ERROR);
+			if (!error_tuple) break;
+			error = malloc(error_tuple->length);
+			strncpy(error, error_tuple->value->cstring, error_tuple->length);
 			areas_reload_data_and_mark_dirty();
 			break;
 		}
 		case METHOD_REPLY_COUNT:
+      DEBUG("handling REPLY_COUNT");
 			free_safe(areas);
-			tuple = dict_find(iter, KEY_INDEX);
-			if (!tuple) break;
-			num_areas = tuple->value->uint8;
-			areas = malloc(sizeof(Area) * num_area);
-			if (areas == NULL) num_areas = 0;
+			Tuple *count_tuple = dict_find(iter, KEY_COUNT);
+			if (!count_tuple) break;
+			num_areas = (uint8_t) count_tuple->value->int32;
+      DEBUG("num_areas=%" PRIu8 "", num_areas);
+			areas = malloc(sizeof(Area) * num_areas);
+      if (areas == NULL) {
+          num_areas = 0;
+      }
 			break;
 		case METHOD_REPLY_ITEM: {
+      DEBUG("handling REPLY_ITEM");
 			if (!areas_count()) break;
-			tuple = dict_find(iter, KEY_INDEX);
-			if (!tuple) break;
-			uint8_t index = tuple->value->uint8;
+			Tuple *index_tuple = dict_find(iter, KEY_INDEX);
+			if (!index_tuple) break;
+			uint8_t index = (uint8_t) index_tuple->value->int32;
+      DEBUG("index=%" PRIu8 "", index);
 			Area *area = areas_get(index);
+      if (!area) break;
 			area->index = index;
-			tuple = dict_find(iter, KEY_NAME);
-			if (tuple) {
-				strncpy(area->name, tuple->value->cstring, sizeof(area->name) - 1);
+			Tuple *name_tuple = dict_find(iter, KEY_NAME);
+			if (name_tuple) {
+        DEBUG("name=%s", name_tuple->value->cstring);
+				strncpy(area->name, name_tuple->value->cstring, sizeof(area->name) - 1);
 			}
-			LOG("area: %d '%s'", area->index, area->title);
+			DEBUG("area: %d '%s'", area->index, area->name);
 			areas_reload_data_and_mark_dirty();
 			break;
 		}
