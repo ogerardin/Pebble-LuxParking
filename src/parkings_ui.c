@@ -31,7 +31,7 @@ static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex 
       // the number of free spaces is available: set color to red if full, green otherwise
       graphics_context_set_text_color(ctx,
                                       (parking->free == 0) ?
-                                        ColorRed :
+                                        GColorRed :
                                         (menu_cell_layer_is_highlighted(cell_layer) ? GColorGreen : GColorDarkGreen)
                                       );
     }
