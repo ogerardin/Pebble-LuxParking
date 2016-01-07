@@ -12,6 +12,7 @@ The first screen shows a list of city areas. If you select an area, you will see
 ## Yet to do
 * Speed improvements. Refresh is much slower on the actual device than on the emulator.
 * Add a screen to display full detail for a selected parking 
+* Display a green/red bar to visualize occupancy (like on VdL's web page)
 * Avoid redrawing all items each time an item is added
 * Auto-refresh parking data 
 * Sort parkings (by what?)
