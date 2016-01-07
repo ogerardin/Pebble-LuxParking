@@ -68,13 +68,15 @@ void parkings_in_received_handler(DictionaryIterator *iter) {
 			if (name_tuple) {
 				strncpy(parking->name, name_tuple->value->cstring, sizeof(parking->name) - 1);
 			}
+      Tuple *open_tuple = dict_find(iter, KEY_ISOPEN);
+      if (open_tuple) parking->open = (int8_t) open_tuple->value->int32;
       Tuple *capacity_tuple = dict_find(iter, KEY_CAPACITY);
       if (capacity_tuple) parking->capacity = (int16_t) capacity_tuple->value->int32;
       Tuple *free_tuple = dict_find(iter, KEY_FREE);
       if (free_tuple) parking->free = (int16_t) free_tuple->value->int32;
       Tuple *trend_tuple = dict_find(iter, KEY_TREND);
       if (trend_tuple) parking->trend = (int8_t) trend_tuple->value->int32;
-			DEBUG("Parking[%d] = '%s' %d/%d (%d)", parking->index, parking->name, parking->free, parking->capacity, parking->trend);
+			DEBUG("Parking[%d] = '%s' %d %d/%d (%d)", parking->index, parking->name, parking->open, parking->free, parking->capacity, parking->trend);
 			parkings_reload_data_and_mark_dirty();
 			break;
 		}

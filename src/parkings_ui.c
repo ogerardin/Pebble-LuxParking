@@ -27,17 +27,19 @@ static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex 
 //    DEBUG("rendering row %d", cell_index->row);
     Parking *parking = parkings_get(cell_index->row);
 #if defined(PBL_COLOR)
-    if (parking->free >= 0) {
-      // the number of free spaces is available: set color to red if full, green otherwise
-      graphics_context_set_text_color(ctx,
-                                      (parking->free == 0) ?
-                                        GColorRed :
-                                        (menu_cell_layer_is_highlighted(cell_layer) ? GColorGreen : GColorDarkGreen)
-                                      );
+    // set color to red if full or closed, green otherwise
+    if (!parking -> open || parking->free == 0) {
+      graphics_context_set_text_color(ctx, GColorRed);
+    }
+    else {
+      graphics_context_set_text_color(ctx, menu_cell_layer_is_highlighted(cell_layer) ? GColorGreen : GColorDarkGreen);
     }
 #endif
     char subtitle[32];
-    if (parking->free >= 0) {
+    if (! parking->open) {
+      snprintf(subtitle, sizeof(subtitle), "closed");
+    }
+    else if (parking->free >= 0) {
       snprintf(subtitle, sizeof(subtitle), "%" PRId16 "/%" PRId16 "", parking->free, parking->capacity);
     }
     else {

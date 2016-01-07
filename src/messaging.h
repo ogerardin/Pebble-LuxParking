@@ -36,7 +36,9 @@ typedef enum {
   /** Key for current parking occupancy trend; used with type=PARKING and method=REPLY_ITEM */
   KEY_TREND = 10,
   /** Key for area name */
-  KEY_AREA = 11
+  KEY_AREA = 11,
+  /** Key for "open" status */
+  KEY_ISOPEN = 12
   
 } MessageKey;
 

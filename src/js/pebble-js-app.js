@@ -103,6 +103,7 @@ LuxParking.sendParkings = function(data, param) {
     var free = parking.actuel ? parseInt(parking.actuel) : -1;
     var capacity = parking.total ? parseInt(parking.total) : -1;
     var trend = parking.tendance ? parseInt(parking.tendance) : 99; //anything other than -1, 0, 1 will do
+    var open = parking.ouvert ? parseInt(parking.ouvert) : -1;
     appMessageQueue.send({
       "type": 1, // PARKING,
       "method": 3, // REPLY_ITEM
@@ -110,6 +111,7 @@ LuxParking.sendParkings = function(data, param) {
       "id": parking.id,
       "name": parking.title,
       "area": area,
+      "open": open,
       "capacity": capacity,
       "free": free,
       "trend": trend

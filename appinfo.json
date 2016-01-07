@@ -10,7 +10,8 @@
         "method": 2,
         "name": 6,
         "trend": 10,
-        "type": 1
+        "type": 1,
+        "open": 12
     },
     "capabilities": [
         ""

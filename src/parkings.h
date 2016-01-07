@@ -15,6 +15,7 @@ typedef struct {
   uint16_t id;
   char name[32];
   char area[32];
+  int8_t open;
   int16_t capacity;
   int16_t free;
   int8_t trend;
