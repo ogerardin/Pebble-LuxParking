@@ -10,14 +10,17 @@ The first screen shows a list of city areas. If you select an area, you will see
 * on color watches, the text will be green if the parking has available spaces, red if it's full
 
 ## Yet to do
-* Speed improvements. Refresh is much slower on the actual device than on the emulator.
+* Speed improvements (refresh is much slower on the actual device than on the emulator)
 * Add a screen to display full detail for a selected parking 
 * Display a green/red bar to visualize occupancy (like on VdL's web page)
+* Display RSS timestamp
 * Avoid redrawing all items each time an item is added
+* Cache parking list in the JS tier 
 * Auto-refresh parking data 
+* Display heading with current time / battery / ...
 * Sort parkings (by what?)
 * Add some configuration options
 * Store last selected area
 * i18n
-* Alternative solution for XML to JSON 
+* Alternative solution for XML to JSON service
 
