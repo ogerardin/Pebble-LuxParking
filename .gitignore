@@ -6,3 +6,6 @@ build
 .lock-waf*
 
 LuxParking.xcodeproj/
+
+src/generated/
+src/js/generated

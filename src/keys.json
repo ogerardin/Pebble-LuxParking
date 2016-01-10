@@ -1,0 +1,13 @@
+{
+	"TYPE": [
+		"PARKING",
+		"AREA",
+		"ERROR"
+	],
+	"METHOD": [
+		"REQUEST_GET",
+		"REPLY_COUNT",
+		"REPLY_ITEM",
+		"REPLY_ERROR"
+	]
+}

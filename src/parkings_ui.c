@@ -2,7 +2,9 @@
 #include <pebble.h>
 #include "lib/pebble-assist.h"
 
-#include "messaging.h"
+#include "generated/appinfo.h"
+#include "generated/keys.h"
+
 #include "parkings.h"
 #include "parkings_ui.h"
 

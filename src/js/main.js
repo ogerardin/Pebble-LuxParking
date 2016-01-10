@@ -47,7 +47,7 @@ LuxParking.sendError = function(type, err) {
   appMessageQueue.clear();
   appMessageQueue.send({
                        "type": type,
-                       "method": 4, // REPLY_ERROR
+                       "method": METHOD.REPLY_ERROR,
                        "error": err
                        });
 };
@@ -92,8 +92,8 @@ LuxParking.sendParkings = function(data, param) {
                                 });
   
   appMessageQueue.send({
-                       "type": 1, // PARKING
-                       "method": 2, // REPLY_COUNT
+                       "type": TYPE.PARKING,
+                       "method": METHOD.REPLY_COUNT,
                        "count": parkings.length
                        });
   
@@ -105,8 +105,8 @@ LuxParking.sendParkings = function(data, param) {
     var trend = parking.tendance ? parseInt(parking.tendance) : 99; //anything other than -1, 0, 1 will do
     var open = parking.ouvert ? parseInt(parking.ouvert) : -1;
     appMessageQueue.send({
-      "type": 1, // PARKING,
-      "method": 3, // REPLY_ITEM
+      "type": TYPE.PARKING,
+      "method": METHOD.REPLY_ITEM,
       "index": i,
       "id": parking.id,
       "name": parking.title,
@@ -132,15 +132,15 @@ LuxParking.sendAreas = function(data, param) {
                                 });
   
   appMessageQueue.send({
-                       "type": 2, // AREA
-                       "method": 2, // REPLY_COUNT
+                       "type": TYPE.AREA,
+                       "method": METHOD.REPLY_COUNT,
                        "count": areas.length
                        });
   
   for (var i=0; i<areas.length; i++) {
     appMessageQueue.send({
-                         "type": 2, // AREA,
-                         "method": 3, // REPLY_ITEM
+                         "type": TYPE.AREA,
+                         "method": METHOD.REPLY_ITEM,
                          "index": i,
                          "name": areas[i]
                          });
@@ -155,12 +155,12 @@ LuxParking.handleAppMessage = function(e) {
   console.log("Type: " + msgType + ", method: " + msgMethod);
 
   switch (msgMethod) {
-    case 1: // REQUEST_GET
+    case METHOD.REQUEST_GET:
       switch (msgType) {
-        case 2: // AREA
+        case TYPE.AREA:
           LuxParking.queryRss(LuxParking.sendAreas, null);
           break;
-        case 1: // PARKING
+        case TYPE.PARKING:
           var area = e.payload.area;
           LuxParking.queryRss(LuxParking.sendParkings, area);
           break;

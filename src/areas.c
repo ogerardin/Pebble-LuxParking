@@ -10,7 +10,9 @@
 #include <pebble.h>
 #include "lib/pebble-assist.h"
 
-#include "messaging.h"
+#include "generated/appinfo.h"
+#include "generated/keys.h"
+
 #include "areas_ui.h"
 #include "areas.h"
 
@@ -31,23 +33,23 @@ void areas_finalize() {
 }
 
 void areas_in_received_handler(DictionaryIterator *iter) {
-	Tuple *method_tuple = dict_find(iter, KEY_METHOD);
+	Tuple *method_tuple = dict_find(iter, APP_KEY_METHOD);
 	if (!method_tuple) return;
 	free_safe(error);
     
   uint8_t method = method_tuple->value->uint8;
 	switch (method) {
-		case METHOD_REPLY_ERROR: {
-			Tuple *error_tuple = dict_find(iter, KEY_ERROR);
+		case KEY_METHOD_REPLY_ERROR: {
+			Tuple *error_tuple = dict_find(iter, APP_KEY_ERROR);
 			if (!error_tuple) break;
 			error = malloc(error_tuple->length);
 			strncpy(error, error_tuple->value->cstring, error_tuple->length);
 			areas_reload_data_and_mark_dirty();
 			break;
 		}
-		case METHOD_REPLY_COUNT:
+		case KEY_METHOD_REPLY_COUNT:
 			free_safe(areas);
-			Tuple *count_tuple = dict_find(iter, KEY_COUNT);
+			Tuple *count_tuple = dict_find(iter, APP_KEY_COUNT);
 			if (!count_tuple) break;
 			num_areas = (uint8_t) count_tuple->value->int32;
 			areas = malloc(sizeof(Area) * num_areas);
@@ -55,15 +57,15 @@ void areas_in_received_handler(DictionaryIterator *iter) {
           num_areas = 0;
       }
 			break;
-		case METHOD_REPLY_ITEM: {
+		case KEY_METHOD_REPLY_ITEM: {
 			if (!areas_count()) break;
-			Tuple *index_tuple = dict_find(iter, KEY_INDEX);
+			Tuple *index_tuple = dict_find(iter, APP_KEY_INDEX);
 			if (!index_tuple) break;
 			uint8_t index = (uint8_t) index_tuple->value->int32;
 			Area *area = areas_get(index);
       if (!area) break;
 			area->index = index;
-			Tuple *name_tuple = dict_find(iter, KEY_NAME);
+			Tuple *name_tuple = dict_find(iter, APP_KEY_NAME);
 			if (name_tuple) {
 				strncpy(area->name, name_tuple->value->cstring, sizeof(area->name) - 1);
 			}
@@ -112,8 +114,8 @@ void areas_request() {
   
 	DictionaryIterator *iter;
 	app_message_outbox_begin(&iter);
-	dict_write_uint8(iter, KEY_TYPE, TYPE_AREA);
-	dict_write_uint8(iter, KEY_METHOD, METHOD_REQUEST_GET);
+	dict_write_uint8(iter, APP_KEY_TYPE, KEY_TYPE_AREA);
+	dict_write_uint8(iter, APP_KEY_METHOD, KEY_METHOD_REQUEST_GET);
 	dict_write_end(iter);
 	app_message_outbox_send();
   

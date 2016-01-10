@@ -2,7 +2,9 @@
 #include <pebble.h>
 #include "lib/pebble-assist.h"
 
-#include "messaging.h"
+#include "generated/appinfo.h"
+#include "generated/keys.h"
+
 #include "areas.h"
 #include "parkings.h"
 #include "areas_ui.h"
@@ -19,27 +21,25 @@ void reload_data_and_mark_dirty() {
 }
 
 static void message_received(DictionaryIterator *iter, void *context) {
-  Tuple *message_type = dict_find(iter, KEY_TYPE);
+  Tuple *message_type = dict_find(iter, APP_KEY_TYPE);
   if (!message_type) return;
 
   free_safe(error);
   uint8_t type = message_type->value->uint8;
   switch (type) {
-    case TYPE_ERROR: {
-      Tuple* error_tuple = dict_find(iter, KEY_ERROR);
+    case KEY_TYPE_ERROR: {
+      Tuple* error_tuple = dict_find(iter, APP_KEY_ERROR);
       if (!error_tuple) break;
       error = malloc(error_tuple->length);
       strncpy(error, error_tuple->value->cstring, error_tuple->length);
       reload_data_and_mark_dirty();
     }
-    case TYPE_PARKING: {
-//        int32_t capacity = dict_find(iter, KEY_CAPACITY)->value->int32;
-//        int32_t occupancy = dict_find(iter, KEY_OCCUPANCY)->value->int32;
+    case KEY_TYPE_PARKING: {
         DEBUG("Parking message received");
         parkings_in_received_handler(iter);
       }
       break;
-    case TYPE_AREA: {
+    case KEY_TYPE_AREA: {
         DEBUG("Area message received");
         areas_in_received_handler(iter);
       }
