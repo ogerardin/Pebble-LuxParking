@@ -12,6 +12,7 @@ The first screen shows a list of city areas. If you select an area, you will see
 ## Yet to do
 * Speed improvements (refresh is much slower on the actual device than on the emulator)
 * Add a screen to display full detail for a selected parking 
+* handle no phone connection / no internet connection gracefully
 * Display a green/red bar to visualize occupancy (like on VdL's web page)
 * Display RSS timestamp
 * Avoid redrawing all items each time an item is added
