@@ -5,7 +5,12 @@ build
 # Ignore waf lock file
 .lock-waf*
 
+*.log
+
 LuxParking.xcodeproj/
 
 src/generated/
-src/js/generated
+src/js/src/generated/
+
+src/js/pebble-js-app.js
+
