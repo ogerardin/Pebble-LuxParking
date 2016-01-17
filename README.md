@@ -16,7 +16,6 @@ The first screen shows a list of city areas. If you select an area, you will see
 * Display a green/red bar to visualize occupancy (like on VdL's web page)
 * Display RSS timestamp
 * Avoid redrawing all items each time an item is added
-* Cache parking list in the JS tier 
 * Auto-refresh parking data 
 * Display heading with current time / battery / ...
 * Sort parkings (by what?)

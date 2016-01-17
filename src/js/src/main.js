@@ -1,6 +1,10 @@
 
 var LuxParking = {};
 
+LuxParking.lastRss = null;
+LuxParking.lastRssTimestamp = null;
+
+
 LuxParking.sendError = function(type, err) {
   appMessageQueue.clear();
   appMessageQueue.send({
@@ -12,6 +16,17 @@ LuxParking.sendError = function(type, err) {
 
 
 LuxParking.queryRss = function(callback, param) {
+  var now = new Date();
+  console.log("Now: " + now);
+  console.log("lastRssTimestamp: " + LuxParking.lastRssTimestamp);
+  console.log("Diff: " + (now - LuxParking.lastRssTimestamp));
+
+  if (LuxParking.lastRssTimestamp && (now - LuxParking.lastRssTimestamp) < (30 * 1000)) {
+    console.log("Using cached RSS");
+    callback(LuxParking.lastRss, param);
+    return;
+  }
+  
   var req = new XMLHttpRequest();
   // Data is provided by Ville de Luxembourg as RSS 2.0, which is actually XML. Since it is nearly impossible to parse XML using
   // PebbleKit JS (no DOM access), we use an online XML2JSON service; see http://bitzesty.com/2011/04/11/xml-to-json-api-proxy-for-quick-mash-ups/
@@ -24,8 +39,13 @@ LuxParking.queryRss = function(callback, param) {
       // able to pass extra arguments to the callback.
       var json = req.responseText.slice("dummy(".length, -1);
       var data = JSON.parse(json);
-      console.log("RSS version: " + data.rss.version);
-      console.log("Title: " + data.rss.channel.title);
+//      console.log("RSS version: " + data.rss.version);
+//      console.log("Title: " + data.rss.channel.title);
+//      console.log("Date: " + data.rss.channel.lastBuildDate);
+      
+      LuxParking.lastRss = data;
+      LuxParking.lastRssTimestamp = now;
+      
       callback(data, param);
     }
     else {
@@ -42,9 +62,8 @@ LuxParking.sendParkings = function(data, param) {
   
   data.rss.channel.item.forEach(function(item) {
                                   var area = item.quartier[0].__content__;
-                                  console.log("Parking " + item.title + " (" + area + "): " + item.actuel + "/" + item.total);
                                   if (!param || area == param) {
-                                    console.log("+Ajout parking: " + item.title);
+                                    console.log("+Parking " + item.title + " (" + area + "): " + item.actuel + "/" + item.total);
                                     parkings.push(item);
                                   }
                                 });
@@ -82,10 +101,10 @@ LuxParking.sendAreas = function(data, param) {
   var areas = [];
   data.rss.channel.item.forEach(function(item) {
                                   var area = item.quartier[0].__content__;
-                                  console.log("Parking " + item.title + " (" + area + "): " + item.actuel + "/" + item.total);
+//                                  console.log("Parking " + item.title + " (" + area + "): " + item.actuel + "/" + item.total);
                                   if (areas.indexOf(area) < 0) {
                                     areas.push(area);
-                                    console.log("+Ajout quartier: " + area);
+                                    console.log("+Area: " + area);
                                   }
                                 });
   
