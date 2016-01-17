@@ -53,7 +53,7 @@ def build(ctx):
   ctx(rule=generate_keys_js, source='src/keys.json', target='../src/js/src/generated/keys.js')
     
   # Combine the source JS files into a single JS file.
-  ctx(rule=concatenate_js, source=ctx.path.ant_glob('src/js/src/**/*.js'), target='js/pebble-js-app.js')
+  ctx(rule=concatenate_js, source=ctx.path.ant_glob('src/js/src/**/*.js'), target='../src/js/pebble-js-app.js')
     
   # Now the main build process can happen, building multiple platforms
   for p in ctx.env.TARGET_PLATFORMS:
@@ -71,7 +71,7 @@ def build(ctx):
 
   # Bundle everything needed into the pbw file
   ctx.set_group('bundle')
-  ctx.pbl_bundle(binaries=binaries, js=ctx.path.ant_glob('build/js/pebble-js-app.js'))
+  ctx.pbl_bundle(binaries=binaries, js=ctx.path.ant_glob('src/js/pebble-js-app.js'))
 
 def generate_appinfo_h(task):
   src = task.inputs[0].abspath()
