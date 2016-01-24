@@ -31,4 +31,4 @@ install:
 env:
   global:
   - PEBBLE_SDK=3.8.2
-  - PEBBLE_TOOL=4.0
+  - PEBBLE_TOOL=4.0.1
