@@ -123,7 +123,7 @@ def generate_keys_js(task):
 
 def concatenate_js(task):
   inputs = (input.abspath() for input in task.inputs)
-  uglifyjs(*inputs, o=task.outputs[0].abspath(), b=True)
+  uglifyjs(*inputs, o=task.outputs[0].abspath(), c=True)
 
 def js_jshint(task):
   inputs = (input.abspath() for input in task.inputs)
