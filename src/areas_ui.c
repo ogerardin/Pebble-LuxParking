@@ -11,7 +11,9 @@
 
 static Window *window;
 static MenuLayer *menu_layer;
-static StatusBarLayer *status_bar;
+static TextLayer *version_layer;
+
+static char version_text[20];
 
 
 static uint16_t get_num_rows_callback(MenuLayer *menu_layer, uint16_t section_index, void *context) {
@@ -42,24 +44,29 @@ static void select_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index,
 }
 
 
-
 static void window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
-  
-  status_bar = status_bar_layer_create();
-  status_bar_layer_set_separator_mode(status_bar, StatusBarLayerSeparatorModeDotted);
-  layer_add_child(window_layer, status_bar_layer_get_layer(status_bar));
-
   GRect bounds = layer_get_frame(window_layer);
-  GRect menu_bounds = GRect(
-                            bounds.origin.x,
+  
+  // pseudo status bar with app name and version
+  version_layer = text_layer_create(GRect(bounds.origin.x,
+                                     bounds.origin.y - 2,
+                                     bounds.size.w,
+                                     STATUS_BAR_LAYER_HEIGHT));
+  text_layer_set_font(version_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
+  text_layer_set_text_alignment(version_layer, GTextAlignmentCenter);
+  snprintf(version_text, sizeof(version_text), "%s v%s", SHORT_NAME, VERSION_LABEL);
+  text_layer_set_text(version_layer, version_text);
+  layer_add_child(window_layer, text_layer_get_layer(version_layer));
+
+  // menu
+  GRect menu_bounds = GRect(bounds.origin.x,
                             bounds.origin.y + STATUS_BAR_LAYER_HEIGHT,
                             bounds.size.w,
-                            bounds.size.h - STATUS_BAR_LAYER_HEIGHT
-                            );
+                            bounds.size.h - STATUS_BAR_LAYER_HEIGHT);
   menu_layer = menu_layer_create(menu_bounds);
   
-    menu_layer_set_click_config_onto_window(menu_layer, window);
+  menu_layer_set_click_config_onto_window(menu_layer, window);
   
   
 #if defined(PBL_COLOR)

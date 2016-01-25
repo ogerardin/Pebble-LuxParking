@@ -81,6 +81,7 @@ def generate_appinfo_h(task):
   f.write('#pragma once\n\n')
   #  f.write('#define DEBUG {0}\n'.format('true' if appinfo['debug'] else 'false'))
   f.write('#define VERSION_LABEL "{0}"\n'.format(appinfo['versionLabel']))
+  f.write('#define SHORT_NAME "{0}"\n'.format(appinfo['shortName']))
   f.write('#define UUID "{0}"\n'.format(appinfo['uuid']))
   for key in appinfo['appKeys']:
     f.write('#define APP_KEY_{0} {1}\n'.format(key.upper(), appinfo['appKeys'][key]))
