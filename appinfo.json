@@ -22,6 +22,12 @@
     "resources": {
         "media": [
             {
+                "file": "images/area.png",
+                "name": "IMG_AREA",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
                 "file": "images/arrow_down.png",
                 "name": "IMG_TREND_DOWN",
                 "targetPlatforms": null,
