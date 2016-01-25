@@ -13,6 +13,8 @@ static Window *window;
 static MenuLayer *menu_layer;
 static TextLayer *version_layer;
 
+GBitmap *area_icon;
+
 static char version_text[20];
 
 
@@ -26,7 +28,7 @@ static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex 
 		graphics_draw_text(ctx, areas_get_error(), fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD), 
                        GRect(4, 2, 136, 128), GTextOverflowModeFill, GTextAlignmentLeft, NULL);
 	} else {
-        menu_cell_basic_draw(ctx, cell_layer, areas_get(cell_index->row)->name, NULL, NULL);
+        menu_cell_basic_draw(ctx, cell_layer, areas_get(cell_index->row)->name, NULL, area_icon);
 	}
 }
 
@@ -88,6 +90,8 @@ static void window_unload(Window *window) {
 
 
 void areas_ui_init() {
+    area_icon = gbitmap_create_with_resource(RESOURCE_ID_IMG_AREA);
+
     window = window_create();
     window_set_window_handlers(window, (WindowHandlers) {
         .load = window_load,
