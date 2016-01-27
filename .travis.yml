@@ -3,7 +3,7 @@ language: python
 
 # 2.7 is the only version officially supported
 python:
-  - "2.7"
+- '2.7'
 
 script:
 - pebble-dev/bin/pebble build
@@ -17,12 +17,12 @@ before_install:
 - mv pebble-sdk*/* pebble-dev
 
 install:
-- pip install --upgrade pip # just to future proof, since travis seem to hang behind
+- pip install --upgrade pip
 - cd pebble-dev
 - virtualenv --no-site-packages .env
 - source .env/bin/activate
 - pip install --install-option="--no-cython-compile" cython
-- "pip install -r requirements.txt"
+- pip install -r requirements.txt
 - mkdir ~/.pebble-sdk
 - touch ~/.pebble-sdk/NO_TRACKING
 - echo y | bin/pebble sdk install $PEBBLE_SDK
@@ -32,3 +32,11 @@ env:
   global:
   - PEBBLE_SDK=3.8.2
   - PEBBLE_TOOL=4.0.1
+
+deploy:
+  provider: releases
+  api_key:
+    secure: fl7bdofQzstE3D08Kk2APHiorSzOsUjuMGOIMDrxmD/0xwfts29TDYbtgwfR/hpZ0b5Knkp/0pJE0O3fplPdYnoXbQSVS721EIGKv4qq+u90euRQEt3tXxHAfVC0TMzqR+4gLXi15g4jxvdNezXr9XpBGR8v4ZoCABZ/ZE0VbCrGMLADGjLkWWQiRn7+sstOWd5eFWluDkhr+aF99CbnyocUZ11tgJ5sGUH3Ig8u4WopIftSsGR3t2qH+5O6IKGqzjgzPcaKQmchPS8wGS9XFHbfA8PZRuKr8/WJ7TH0demS0Jcbd/SR9/s+6QjAYIUZyQgIn38XlY9Eu19qe09QKJIHNlSzKQ9sk/YEXMY6HdcOlKELExdWrylT010p0+5E5xbBQ6lh4c6lOw1sM9HUatufmA5jgol1tq3MxmVRavYXPcavZkqH6MGJWBPefRGnQHzItUsb2ZiNZ2OqmgJh/vYPjLy7xJeYur4z7f2nk3Rv/PqX3sBKzvom7KzbTQ5TsytYS87KNOC4WQUyL2yS+dORqX2Ymm6VkcxYI2137ieN/Brqn29iMsNZgD/zTRhji6l1gpyhBgRNIb7Vy5+Pn1XPx6/zblPBPVNT2KRpHQfH0SvUxO7uut2+fPml79wDSEZOY8MKyDOI6psoidxtiNuDbPUPb6sHD92G2Twj224=
+  file: build/LuxParking.pbw
+  on:
+    repo: ogerardin/LuxParking
