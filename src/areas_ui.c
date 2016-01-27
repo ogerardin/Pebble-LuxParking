@@ -52,7 +52,7 @@ static void window_load(Window *window) {
   
   // pseudo status bar with app name and version
   version_layer = text_layer_create(GRect(bounds.origin.x,
-                                     bounds.origin.y - 2,
+                                     PBL_IF_ROUND_ELSE(bounds.origin.y + 7, bounds.origin.y - 2),
                                      bounds.size.w,
                                      STATUS_BAR_LAYER_HEIGHT));
   text_layer_set_font(version_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
