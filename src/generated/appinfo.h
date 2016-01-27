@@ -15,3 +15,4 @@
 #define APP_KEY_ERROR 3
 #define APP_KEY_TYPE 1
 #define APP_KEY_METHOD 2
+#define APP_KEY_TIMESTAMP 13

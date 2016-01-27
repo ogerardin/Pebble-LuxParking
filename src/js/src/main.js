@@ -21,6 +21,7 @@ LuxParking.queryRss = function(callback, param) {
   console.log("lastRssTimestamp: " + LuxParking.lastRssTimestamp);
   console.log("Diff: " + (now - LuxParking.lastRssTimestamp));
 
+  // if last query to the server was less than 30s ago, don't requery, use the cached version
   if (LuxParking.lastRssTimestamp && (now - LuxParking.lastRssTimestamp) < (30 * 1000)) {
     console.log("Using cached RSS");
     callback(LuxParking.lastRss, param);
@@ -44,7 +45,7 @@ LuxParking.queryRss = function(callback, param) {
 //      console.log("Date: " + data.rss.channel.lastBuildDate);
       
       LuxParking.lastRss = data;
-      LuxParking.lastRssTimestamp = now;
+      LuxParking.lastRssTimestamp = new Date();
       
       callback(data, param);
     }
@@ -71,7 +72,8 @@ LuxParking.sendParkings = function(data, param) {
   appMessageQueue.send({
                        "type": TYPE.PARKING,
                        "method": METHOD.REPLY_COUNT,
-                       "count": parkings.length
+                       "count": parkings.length,
+                       "timestamp": LuxParking.lastRssTimestamp.toISOString()
                        });
   
   for (var i=0; i<parkings.length; i++){
@@ -111,7 +113,8 @@ LuxParking.sendAreas = function(data, param) {
   appMessageQueue.send({
                        "type": TYPE.AREA,
                        "method": METHOD.REPLY_COUNT,
-                       "count": areas.length
+                       "count": areas.length,
+                       "timestamp": LuxParking.lastRssTimestamp.toISOString()
                        });
   
   for (var i=0; i<areas.length; i++) {

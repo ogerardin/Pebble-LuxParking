@@ -48,7 +48,7 @@ void parkings_in_received_handler(DictionaryIterator *iter) {
 			parkings_reload_data_and_mark_dirty();
 			break;
 		}
-		case KEY_METHOD_REPLY_COUNT:
+		case KEY_METHOD_REPLY_COUNT: {
 			free_safe(parkings);
 			Tuple *count_tuple = dict_find(iter, APP_KEY_COUNT);
 			if (!count_tuple) break;
@@ -57,7 +57,10 @@ void parkings_in_received_handler(DictionaryIterator *iter) {
       if (parkings == NULL) {
           num_parkings = 0;
       }
+			Tuple *timestamp_tuple = dict_find(iter, APP_KEY_TIMESTAMP);
+      if (timestamp_tuple) parkings_ui_set_timestamp(timestamp_tuple->value->cstring);
 			break;
+    }
 		case KEY_METHOD_REPLY_ITEM: {
 			if (!parkings_count()) break;
 			Tuple *index_tuple = dict_find(iter, APP_KEY_INDEX);

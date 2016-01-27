@@ -47,7 +47,7 @@ void areas_in_received_handler(DictionaryIterator *iter) {
 			areas_reload_data_and_mark_dirty();
 			break;
 		}
-		case KEY_METHOD_REPLY_COUNT:
+		case KEY_METHOD_REPLY_COUNT: {
 			free_safe(areas);
 			Tuple *count_tuple = dict_find(iter, APP_KEY_COUNT);
 			if (!count_tuple) break;
@@ -57,6 +57,7 @@ void areas_in_received_handler(DictionaryIterator *iter) {
           num_areas = 0;
       }
 			break;
+    }
 		case KEY_METHOD_REPLY_ITEM: {
 			if (!areas_count()) break;
 			Tuple *index_tuple = dict_find(iter, APP_KEY_INDEX);

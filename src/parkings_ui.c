@@ -11,6 +11,9 @@
 
 static Window *window;
 static MenuLayer *menu_layer;
+static TextLayer *status_layer;
+
+static char timestamp[20];
 
 static GBitmap *bitmap_trend_up;
 static GBitmap *bitmap_trend_flat;
@@ -79,7 +82,27 @@ static void select_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index,
 
 
 static void window_load(Window *window) {
-    menu_layer = menu_layer_create_fullscreen(window);
+  Layer *window_layer = window_get_root_layer(window);
+  GRect bounds = layer_get_frame(window_layer);
+  
+  // pseudo status bar with app name and version
+  status_layer = text_layer_create(GRect(bounds.origin.x,
+                                     PBL_IF_ROUND_ELSE(bounds.origin.y + 7, bounds.origin.y - 2),
+                                     bounds.size.w,
+                                     STATUS_BAR_LAYER_HEIGHT));
+  text_layer_set_font(status_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
+  text_layer_set_text_alignment(status_layer, GTextAlignmentCenter);
+  text_layer_set_text(status_layer, "...");
+  layer_add_child(window_layer, text_layer_get_layer(status_layer));
+
+  //menu
+  GRect menu_bounds = GRect(bounds.origin.x,
+                            bounds.origin.y + STATUS_BAR_LAYER_HEIGHT,
+                            bounds.size.w,
+                            bounds.size.h - STATUS_BAR_LAYER_HEIGHT);
+
+  menu_layer = menu_layer_create(menu_bounds);
+  
     menu_layer_set_click_config_onto_window(menu_layer, window);
 #if defined(PBL_COLOR)
 //    menu_layer_set_normal_colors(menu_layer, GColorBlack, GColorWhite);
@@ -124,4 +147,9 @@ void parkings_ui_finalize() {
 void parkings_ui_reload_data_and_mark_dirty(void) {
 	if (!window_is_loaded(window)) return;
 	menu_layer_reload_data_and_mark_dirty(menu_layer);
+}
+
+void parkings_ui_set_timestamp(char* ts) {
+  strncpy(timestamp, ts, sizeof(timestamp)-1);
+  text_layer_set_text(status_layer, timestamp);
 }
