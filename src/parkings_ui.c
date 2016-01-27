@@ -13,7 +13,7 @@ static Window *window;
 static MenuLayer *menu_layer;
 static TextLayer *status_layer;
 
-static char timestamp[20];
+static char status_message[20];
 
 static GBitmap *bitmap_trend_up;
 static GBitmap *bitmap_trend_flat;
@@ -149,7 +149,12 @@ void parkings_ui_reload_data_and_mark_dirty(void) {
 	menu_layer_reload_data_and_mark_dirty(menu_layer);
 }
 
-void parkings_ui_set_timestamp(char* ts) {
-  strncpy(timestamp, ts, sizeof(timestamp)-1);
-  text_layer_set_text(status_layer, timestamp);
+void parkings_ui_set_timestamp(time_t t) {
+  struct tm* lt = localtime(&t);
+  if (clock_is_24h_style()) {
+    strftime(status_message, sizeof(status_message), "Updated %H:%M:%S", lt);
+  } else {
+    strftime(status_message, sizeof(status_message), "Updated %I:%M:%S%p", lt);
+  }
+  text_layer_set_text(status_layer, status_message);
 }

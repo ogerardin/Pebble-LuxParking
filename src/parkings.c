@@ -58,7 +58,7 @@ void parkings_in_received_handler(DictionaryIterator *iter) {
           num_parkings = 0;
       }
 			Tuple *timestamp_tuple = dict_find(iter, APP_KEY_TIMESTAMP);
-      if (timestamp_tuple) parkings_ui_set_timestamp(timestamp_tuple->value->cstring);
+      if (timestamp_tuple) parkings_ui_set_timestamp((time_t) timestamp_tuple->value->int32);
 			break;
     }
 		case KEY_METHOD_REPLY_ITEM: {

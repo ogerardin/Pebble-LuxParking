@@ -73,7 +73,7 @@ LuxParking.sendParkings = function(data, param) {
                        "type": TYPE.PARKING,
                        "method": METHOD.REPLY_COUNT,
                        "count": parkings.length,
-                       "timestamp": LuxParking.lastRssTimestamp.toISOString()
+                       "timestamp": Math.round(LuxParking.lastRssTimestamp.getTime() / 1000)
                        });
   
   for (var i=0; i<parkings.length; i++){
@@ -114,7 +114,7 @@ LuxParking.sendAreas = function(data, param) {
                        "type": TYPE.AREA,
                        "method": METHOD.REPLY_COUNT,
                        "count": areas.length,
-                       "timestamp": LuxParking.lastRssTimestamp.toISOString()
+                       "timestamp": Math.round(LuxParking.lastRssTimestamp.getTime() / 1000)
                        });
   
   for (var i=0; i<areas.length; i++) {
