@@ -9,8 +9,8 @@ build
 
 LuxParking.xcodeproj/
 
-src/generated/
-src/js/src/generated/
+#src/generated/
+#src/js/src/generated/
 
 src/js/pebble-js-app.js
 

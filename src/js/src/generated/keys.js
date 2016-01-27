@@ -1,0 +1,11 @@
+var TYPE = {
+	PARKING: 0,
+	AREA: 1,
+	ERROR: 2,
+};
+var METHOD = {
+	REQUEST_GET: 0,
+	REPLY_COUNT: 1,
+	REPLY_ITEM: 2,
+	REPLY_ERROR: 3,
+};
