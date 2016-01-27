@@ -3,6 +3,8 @@ A Pebble watchapp for displaying parking occupancy in Luxembourg city using the 
 
 **Disclaimer**: This app is not in any way supported or endorsed by Ville de Luxembourg.
 
+**Acknowledgment**: Code was strongly influenced by Neal's [Readebble](https://github.com/Neal/Readebble) project, many thanks to him.
+
 ## Usage
 The first screen shows a list of city areas. If you select an area, you will see the list of parkings for that area, with additional information:
 * number of available spaces / total spaces
