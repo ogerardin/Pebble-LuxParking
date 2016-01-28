@@ -7,12 +7,11 @@ build
 
 *.log
 
-LuxParking.xcodeproj/
-
 #src/generated/
 #src/js/src/generated/
 
 src/js/pebble-js-app.js
 
-.idea
-nbproject
+*.xcodeproj/
+.idea/
+nbproject/
