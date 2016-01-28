@@ -32,24 +32,29 @@
             {
                 "file": "images/arrow_up.png",
                 "name": "IMG_TREND_UP",
+                "spaceOptimization": "memory",
                 "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
                 "file": "images/arrow_flat.png",
                 "name": "IMG_TREND_FLAT",
+                "spaceOptimization": "memory",
                 "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
                 "file": "images/arrow_down.png",
                 "name": "IMG_TREND_DOWN",
+                "spaceOptimization": "memory",
                 "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
                 "file": "images/area.png",
+                "memoryFormat": "Smallest",
                 "name": "IMG_AREA",
+                "spaceOptimization": "memory",
                 "targetPlatforms": null,
                 "type": "bitmap"
             }

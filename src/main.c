@@ -21,6 +21,8 @@ void reload_data_and_mark_dirty() {
 }
 
 static void message_received(DictionaryIterator *iter, void *context) {
+  DEBUG("message received");
+
   Tuple *message_type = dict_find(iter, APP_KEY_TYPE);
   if (!message_type) return;
 
@@ -33,16 +35,15 @@ static void message_received(DictionaryIterator *iter, void *context) {
       error = malloc(error_tuple->length);
       strncpy(error, error_tuple->value->cstring, error_tuple->length);
       reload_data_and_mark_dirty();
+      break;
     }
-    case KEY_TYPE_PARKING: {
+    case KEY_TYPE_PARKING:
         DEBUG("Parking message received");
         parkings_in_received_handler(iter);
-      }
       break;
-    case KEY_TYPE_AREA: {
+    case KEY_TYPE_AREA:
         DEBUG("Area message received");
         areas_in_received_handler(iter);
-      }
       break;
     default:
       ERROR("UNKNOWN MESSAGE TYPE: %d", type);
@@ -59,7 +60,8 @@ static void init() {
 //  app_message_register_inbox_dropped(message_dropped);
 //  app_message_register_outbox_sent(message_sent);
   app_message_register_outbox_failed(send_message_failed);
-  app_message_open_max();
+//  app_message_open_max();
+  app_message_open(2048, 2048);
   
   areas_init();
   parkings_init();

@@ -12,7 +12,7 @@
 
 typedef struct {
     uint8_t index;
-    char name[32];
+    char name[16];
     uint16_t capacity;
     uint16_t occupancy;
 } Area;

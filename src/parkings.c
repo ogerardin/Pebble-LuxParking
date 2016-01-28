@@ -34,10 +34,10 @@ void parkings_finalize() {
 }
 
 void parkings_in_received_handler(DictionaryIterator *iter) {
-	Tuple *method_tuple = dict_find(iter, APP_KEY_METHOD);
+  Tuple *method_tuple = dict_find(iter, APP_KEY_METHOD);
 	if (!method_tuple) return;
-	free_safe(error);
-    
+
+  free_safe(error);
   uint8_t method = method_tuple->value->uint8;
 	switch (method) {
 		case KEY_METHOD_REPLY_ERROR: {
@@ -53,22 +53,22 @@ void parkings_in_received_handler(DictionaryIterator *iter) {
 			Tuple *count_tuple = dict_find(iter, APP_KEY_COUNT);
 			if (!count_tuple) break;
 			num_parkings = (uint8_t) count_tuple->value->int32;
-			parkings = malloc(sizeof(Parking) * num_parkings);
+      parkings = malloc(sizeof(Parking) * num_parkings);
       if (parkings == NULL) {
           num_parkings = 0;
       }
-			Tuple *timestamp_tuple = dict_find(iter, APP_KEY_TIMESTAMP);
+  		Tuple *timestamp_tuple = dict_find(iter, APP_KEY_TIMESTAMP);
       if (timestamp_tuple) parkings_ui_set_timestamp((time_t) timestamp_tuple->value->int32);
 			break;
     }
 		case KEY_METHOD_REPLY_ITEM: {
-			if (!parkings_count()) break;
-			Tuple *index_tuple = dict_find(iter, APP_KEY_INDEX);
+  		if (!parkings_count()) break;
+  		Tuple *index_tuple = dict_find(iter, APP_KEY_INDEX);
 			if (!index_tuple) break;
-			uint8_t index = (uint8_t) index_tuple->value->int32;
+  		uint8_t index = (uint8_t) index_tuple->value->int32;
 			Parking *parking = parkings_get(index);
       if (!parking) break;
-			parking->index = index;
+  		parking->index = index;
 			Tuple *name_tuple = dict_find(iter, APP_KEY_NAME);
 			if (name_tuple) {
 				strncpy(parking->name, name_tuple->value->cstring, sizeof(parking->name) - 1);

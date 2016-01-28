@@ -13,8 +13,8 @@
 typedef struct {
   uint8_t index;
   uint16_t id;
-  char name[32];
-  char area[32];
+  char name[16];
+  char area[16];
   int8_t open;
   int16_t capacity;
   int16_t free;
