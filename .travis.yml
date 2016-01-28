@@ -40,3 +40,4 @@ deploy:
   file: build/LuxParking.pbw
   on:
     repo: ogerardin/LuxParking
+    tags: true
