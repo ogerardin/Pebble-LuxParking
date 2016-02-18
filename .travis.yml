@@ -30,8 +30,8 @@ install:
 
 env:
   global:
-  - PEBBLE_SDK=3.8.2
-  - PEBBLE_TOOL=4.0.1
+  - PEBBLE_SDK=3.9.2
+  - PEBBLE_TOOL=4.1.1
 
 deploy:
   provider: releases
