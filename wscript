@@ -15,7 +15,7 @@ def configure(ctx):
 
 def distclean(ctx):
   ctx.load('pebble_sdk')
-  for p in ['build', 'src/generated', 'src/js/src/generated', 'src/js/pebble-js-app.js']:
+  for p in ['build', 'src/generated', 'src/js/src/generated', 'src/js/app.js']:
     try:
       if os.path.isfile(p): os.remove(p)
       elif os.path.isdir(p): shutil.rmtree(p)
@@ -34,26 +34,26 @@ def build(ctx):
   # The following must be generated first
   ctx.set_group('pregenerate')
     
-  # Run jshint on appinfo.json
-  ctx(rule=js_jshint, source='appinfo.json')
+  # Run jshint on package.json
+  ctx(rule=js_jshint, source='package.json')
     
   # Run jshint on all the JavaScript files
   ctx(rule=js_jshint, source=ctx.path.ant_glob('src/js/src/**/*.js'))
     
   # Generate appinfo.h
-  ctx(rule=generate_appinfo_h, source='appinfo.json', target='../src/generated/appinfo.h')
+  ctx(rule=generate_appinfo_h, source='package.json', target='../src/generated/appinfo.h')
     
   # Generate keys.h
   ctx(rule=generate_keys_h, source='src/keys.json', target='../src/generated/keys.h')
     
   # Generate appinfo.js
-  ctx(rule=generate_appinfo_js, source='appinfo.json', target='../src/js/src/generated/appinfo.js')
+  ctx(rule=generate_appinfo_js, source='package.json', target='../src/js/src/generated/appinfo.js')
     
   # Generate keys.js
   ctx(rule=generate_keys_js, source='src/keys.json', target='../src/js/src/generated/keys.js')
     
   # Combine the source JS files into a single JS file.
-  ctx(rule=concatenate_js, source='src/js/src/main.js src/js/src/appmessagequeue.js ../src/js/src/generated/appinfo.js ../src/js/src/generated/keys.js ', target='src/js/pebble-js-app.js')
+  ctx(rule=concatenate_js, source='src/js/src/main.js src/js/src/appmessagequeue.js ../src/js/src/generated/appinfo.js ../src/js/src/generated/keys.js ', target='src/js/app.js')
   
   # Now the main build process can happen, building multiple platforms
   for p in ctx.env.TARGET_PLATFORMS:
@@ -71,7 +71,7 @@ def build(ctx):
 
   # Bundle everything needed into the pbw file
   ctx.set_group('bundle')
-  ctx.pbl_bundle(binaries=binaries, js='src/js/pebble-js-app.js')
+  ctx.pbl_bundle(binaries=binaries, js='src/js/app.js')
 
 def generate_appinfo_h(task):
   src = task.inputs[0].abspath()
@@ -80,11 +80,11 @@ def generate_appinfo_h(task):
   f = open(target, 'w')
   f.write('#pragma once\n\n')
   #  f.write('#define DEBUG {0}\n'.format('true' if appinfo['debug'] else 'false'))
-  f.write('#define VERSION_LABEL "{0}"\n'.format(appinfo['versionLabel']))
-  f.write('#define SHORT_NAME "{0}"\n'.format(appinfo['shortName']))
-  f.write('#define UUID "{0}"\n'.format(appinfo['uuid']))
-  for key in appinfo['appKeys']:
-    f.write('#define APP_KEY_{0} {1}\n'.format(key.upper(), appinfo['appKeys'][key]))
+  f.write('#define VERSION_LABEL "{0}"\n'.format(appinfo['version']))
+  f.write('#define SHORT_NAME "{0}"\n'.format(appinfo['name']))
+  f.write('#define UUID "{0}"\n'.format(appinfo['pebble']['uuid']))
+  for key in appinfo['pebble']['messageKeys']:
+    f.write('#define APP_KEY_{0} {1}\n'.format(key.upper(), appinfo['pebble']['messageKeys'][key]))
   f.close()
 
 def generate_keys_h(task):

@@ -15,3 +15,5 @@ src/js/pebble-js-app.js
 *.xcodeproj/
 .idea/
 nbproject/
+
+node_modules/

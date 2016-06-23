@@ -1,4 +1,4 @@
-var AppInfo = {
+{
   "version": "0.3.0",
   "author": "Olivier G\u00e9rardin",
   "private": true,
@@ -82,4 +82,4 @@ var AppInfo = {
     ]
   },
   "name": "LuxParking"
-};
+}
