@@ -1,5 +1,5 @@
-13.1# source https://github.com/victorhaggqvist/Pebble-TravisCI-Config
-l3uage: python
+# source https://github.com/victorhaggqvist/Pebble-TravisCI-Config
+language: python
 
 # 2.7 is the only version officially supported
 python:
