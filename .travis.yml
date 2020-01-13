@@ -31,7 +31,7 @@ install:
 env:
   global:
   - PEBBLE_SDK=3.13.1
-  - PEBBLE_TOOL=4.3
+  - PEBBLE_TOOL=4.5
 
 deploy:
   provider: releases
