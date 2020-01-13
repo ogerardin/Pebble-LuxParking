@@ -26,7 +26,7 @@ install:
 - pip install -r requirements.txt
 - mkdir ~/.pebble-sdk
 - touch ~/.pebble-sdk/NO_TRACKING
-- echo y | bin/pebble sdk install $PEBBLE_SDK
+- echo y | bin/pebble sdk install https://github.com/aveao/PebbleArchive/raw/master/SDKCores/sdk-core-$PEBBLE_SDK.tar.bz2
 - cd ..
 
 env:
