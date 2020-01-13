@@ -11,7 +11,7 @@ script:
 before_install:
 - npm install -g jshint
 - npm install -g uglify-js
-- wget -O PebbleSDK.tar.bz2 https://s3.amazonaws.com/assets.getpebble.com/pebble-tool/pebble-sdk-$PEBBLE_TOOL-linux64.tar.bz2
+- wget -O PebbleSDK.tar.bz2 https://developer.rebble.io/s3.amazonaws.com/assets.getpebble.com/pebble-tool/pebble-sdk-$PEBBLE_TOOL-linux64.tar.bz2
 - mkdir pebble-dev
 - tar xjf PebbleSDK.tar.bz2
 - mv pebble-sdk*/* pebble-dev
